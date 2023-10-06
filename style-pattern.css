@@ -172,9 +172,20 @@ section {
   color: #fff;
 }
 
-.image {
-  border: 1px solid;
-  margin: 0.5em;
-  padding: 1em;
-  content: url(https://github.com/crditto/Zen-Garden/tree/main/images/zg_mobile.jpg);
+.image1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30%;
+  padding-right: 30%;
+  content: url(images/zg_mobile.jpg);
+}
+
+.image2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25%;
+  padding-right: 23%;
+  content: url(images/zg_desktop.jpg);
 }/*# sourceMappingURL=style-pattern.css.map */
