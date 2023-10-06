@@ -6,7 +6,7 @@ h4 {
 }
 
 h1 {
-  background: #ea2e49;
+  background: #41658a;
   color: #fff;
   display: inline-block;
   font-weight: normal;
@@ -54,7 +54,7 @@ a {
 }
 
 a:hover {
-  border-color: #ea2e49;
+  border-color: #41658a;
 }
 
 /*# sourceMappingURL=_atoms.css.map */
