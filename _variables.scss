@@ -1,5 +1,9 @@
-$fonts-headline: "arial narrow", Arial, Verdana, sans-serif;
-$fonts-body: verdana, arial, sans-serif;
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Lora&family=Montserrat:wght@300&family=Open+Sans:wght@600&display=swap');
+
+
+$fonts-headline: "Open Sans", Arial, Verdana, sans-serif;
+$fonts-body: "Montserrat", arial, sans-serif;
 $background-color: #79b473;
 $primary: #70a37f;
 $accent1: #41658a;
