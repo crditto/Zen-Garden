@@ -57,6 +57,40 @@ a:hover {
   border-color: #ea2e49;
 }
 
+[role=banner] > h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.summary {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15% 0;
+}
+.summary p:last-child {
+  border-top: 1px solid #ea2e49;
+  margin-top: 1em;
+  padding-top: 1.5em;
+}
+.summary a {
+  color: #fff;
+}
+
+.preamble {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  margin-left: -30%;
+  padding: 5% 5% 5% 30%;
+}
+
+.intro {
+  padding: 5%;
+}
+
 * {
   box-sizing: border-box;
 }
