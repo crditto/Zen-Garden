@@ -135,9 +135,6 @@ section {
   height: 100px;
   border: 1px solid;
 }
-.background {
-  background-color: #79b374!important;
-} 
 
 .primary {
   background-color: #70a37f;
@@ -173,4 +170,11 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
+}
+
+div.image {
+  border: 1px solid;
+  margin: 0.5em;
+  padding: 1em;
+  content: url(https://github.com/crditto/Zen-Garden/blob/main/zg_mobile.jpg);
 }/*# sourceMappingURL=style-pattern.css.map */
