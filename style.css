@@ -12,6 +12,7 @@ h1 {
   color: #fff;
   display: inline-block;
   font-weight: normal;
+  margin-top: 5em;
   margin-bottom: 1em;
   padding: 0.5em 1em;
 }
@@ -96,16 +97,12 @@ a:hover {
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
-.intro {
-  padding: 5%;
-}
-
 header {
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  content: url(images/watertop.png);
+  height: 300px;
+  text-align: center;
+  background-image: url(images/watertop.png);
+  background-size: 100%;
+  opacity: 0.4;
 }
 
 footer {
@@ -121,8 +118,7 @@ footer {
 }
 
 html {
-  background-color: #79b473;
-  padding: 5%;
+  background-color: #237959;
 }
 
 body {
@@ -131,5 +127,4 @@ body {
   color: #333;
   background-color: #237959;
   margin: 0;
-  padding: 1em;
 }/*# sourceMappingURL=style.css.map */
