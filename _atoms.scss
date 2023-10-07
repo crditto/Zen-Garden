@@ -67,6 +67,10 @@ p {
   margin: 0;
 }
 
+.design-name, .designer-name {
+  color: $text-light;
+  padding: 5px;
+
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: $text-dark;
