@@ -31,6 +31,7 @@ h3 {
   letter-spacing: 1px;
   line-height: 1em;
   padding: 0.5em 0 0.25em 0;
+  margin-left: 5em;
 }
 
 h4 {
@@ -46,7 +47,8 @@ p {
   font-size: 1em;
   line-height: 1.5em;
   padding: 0.5em 0;
-  margin: 0;
+  margin-left: 10em;
+  margin-right: 10em;
 }
 
 .design-name, .designer-name {
