@@ -6,16 +6,14 @@
  // padding: 5%;
 }
 header {
-  height: 300px;
+  height: 500px;
   text-align: center;
   background-image: url(images/watertop.png);
   background-size: 100%;
-  opacity: .4;
 }
 footer {
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  content: url(images/waterbottom_720.png);
+  height: 800px;
+  text-align: center;
+  background-image: url(images/waterbottom_720.png);
+  background-size: 100%;
 }

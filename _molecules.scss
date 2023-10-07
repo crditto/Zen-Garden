@@ -12,6 +12,7 @@
 .summary {
   @include atoms.uppercase($text-light);
   padding: 15% 0;
+  margin-top: -13em;
   p:last-child {
     @include atoms.divider;
   }
