@@ -58,7 +58,7 @@ p {
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #333;
+  color: #fff;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
@@ -128,7 +128,7 @@ html {
 body {
   font-family: "Montserrat", arial, sans-serif;
   font-size: 85%;
-  color: #333;
+  color: #fff;
   background-color: #237959;
   margin: 0;
 }/*# sourceMappingURL=style.css.map */
