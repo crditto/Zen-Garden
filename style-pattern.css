@@ -58,7 +58,7 @@ p {
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: #333;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
@@ -115,7 +115,6 @@ header {
 
 footer {
   height: 800px;
-  text-align: center;
   background-image: url(images/waterbottom_720.png);
   background-size: 100%;
 }
