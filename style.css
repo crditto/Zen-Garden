@@ -95,7 +95,7 @@ header {
   text-align: center;
 }
 .summary p:last-child {
-  border-top: 0.5rem solid #41658a;
+  border-top: 3px solid #41658a;
   margin-top: 1em;
   padding-top: 1.5em;
   filter: drop-shadow(10px 10px 4px #45634e);
@@ -130,7 +130,7 @@ header {
 }
 
 .explanation p:last-child {
-  border-bottom: 0.5rem solid #41658a;
+  border-bottom: 3px solid #41658a;
   margin-top: 1em;
   padding-top: 1.5em;
   padding-bottom: 2rem;
@@ -138,7 +138,7 @@ header {
 }
 
 .participation p:last-child {
-  border-bottom: 0.5rem solid #41658a;
+  border-bottom: 3px solid #41658a;
   margin-top: 1em;
   padding-top: 1.5em;
   padding-bottom: 2rem;
@@ -146,7 +146,7 @@ header {
 }
 
 .benefits p:last-child {
-  border-bottom: 0.5rem solid #41658a;
+  border-bottom: 3px solid #41658a;
   margin-top: 1em;
   padding-top: 1.5em;
   padding-bottom: 2rem;
@@ -154,7 +154,7 @@ header {
 }
 
 .requirements p:last-child {
-  border-bottom: 0.5rem solid #41658a;
+  border-bottom: 3px solid #41658a;
   margin-top: 1em;
   padding-top: 1.5em;
   padding-bottom: 2rem;

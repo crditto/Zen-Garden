@@ -19,15 +19,16 @@
   text-transform: uppercase;
   color: $color;
 }
+
 @mixin divider($color: $accent1) {
-  border-top: .5rem solid $color;
+  border-top: 3px solid $color;
   margin-top: 1em;
   padding-top: 1.5em;
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
 @mixin divider2($color: $accent1) {
-  border-bottom: .5rem solid $color;
+  border-bottom: 3px solid $color;
   margin-top: 1em;
   padding-top: 1.5em;
   padding-bottom: 2rem;
