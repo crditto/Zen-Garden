@@ -48,13 +48,30 @@ header {
   
 }
 
-.sidebar .wrapper .design-selection {
+.design-selection {
   margin-bottom: 5rem;
-  
+  li {margin-bottom: 1em;}
 }
 
-.sidebar .wrapper .design-archives {
+#design-selection h3 {
+  margin-left: 1em;
+}
+
+#design-archives h3 {
+  margin-left: 1em;
+}
+
+#zen-resources h3 {
+  margin-left: 1em;
+}
+
+.design-archives {
   margin-bottom: 5rem;
+  li {margin-bottom: 1em;}
+}
+
+#zen-ressources li{
+  margin-bottom: 1em;
 }
 
 .explanation {
@@ -94,5 +111,5 @@ footer a {
 }
 
 .zen-validate-html {
-  margin-left: 8rem;
+  margin-left: 24rem;
 }
