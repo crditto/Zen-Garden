@@ -1,5 +1,9 @@
 /* Font Import */
 @import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Lora&family=Montserrat:wght@300&family=Open+Sans:wght@600&display=swap");
+/*@mixin set-flex($direction: row, $wrap: wrap) {
+  display: flex;
+  flex-flow: $direction $wrap;
+}*/
 h2,
 h3,
 h4 {
@@ -31,7 +35,7 @@ h3 {
   letter-spacing: 1px;
   line-height: 1em;
   padding: 0.5em 0 0.25em 0;
-  margin-left: 5em;
+  margin-left: 1em;
 }
 
 h4 {
@@ -58,7 +62,7 @@ p {
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #333;
+  color: #fff;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
@@ -75,15 +79,9 @@ a:hover {
 }
 
 header {
-  height: 500px;
+  height: 700px;
   text-align: center;
   background-image: url(images/watertop.png);
-  background-size: 100%;
-}
-
-footer {
-  height: 800px;
-  background-image: url(images/waterbottom_720.png);
   background-size: 100%;
 }
 
@@ -92,13 +90,15 @@ footer {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
-  padding: 15% 0;
-  margin-top: -13em;
+  margin-top: -15rem;
+  margin-bottom: 15rem;
+  text-align: center;
 }
 .summary p:last-child {
-  border-top: 1px solid #41658a;
+  border-top: 0.5rem solid #41658a;
   margin-top: 1em;
   padding-top: 1.5em;
+  filter: drop-shadow(10px 10px 4px #45634e);
 }
 .summary a {
   color: #fff;
@@ -107,17 +107,122 @@ footer {
 .preamble {
   background: rgba(255, 255, 255, 0.9);
   color: #333;
-  margin-top: -8%;
-  margin-bottom: 5%;
-  margin-left: -30%;
-  margin-right: 20%;
+  margin-top: -8rem;
+  margin-bottom: 5rem;
+  margin-left: -20rem;
+  margin-right: 18rem;
   padding: 5% 5% 5% 35%;
   border-radius: 0px 20px 20px 0px;
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
+.sidebar {
+  margin-top: -33rem;
+  margin-right: 1rem;
+}
+
+.sidebar .wrapper .design-selection {
+  margin-bottom: 5rem;
+}
+
+.sidebar .wrapper .design-archives {
+  margin-bottom: 5rem;
+}
+
+.explanation p:last-child {
+  border-bottom: 0.5rem solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+.participation p:last-child {
+  border-bottom: 0.5rem solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+.benefits p:last-child {
+  border-bottom: 0.5rem solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+.requirements p:last-child {
+  border-bottom: 0.5rem solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+footer {
+  height: 400px;
+  background-image: url(images/waterbottom_720.png);
+  background-size: 100%;
+  width: 70rem;
+  margin-top: 5rem;
+}
+
+footer a {
+  margin-left: 2rem;
+}
+
+.zen-validate-html {
+  margin-left: 8rem;
+}
+
 /*.intro {
   padding: 5%;
+}*/
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-areas: "intro intro intro" "support support sidebar";
+}
+
+#zen-intro {
+  grid-area: intro;
+}
+
+#zen-supporting {
+  grid-area: support;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+/*.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1r-fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "summary summary summary"
+    "preamble preamble preamble"
+}
+
+header {
+  grid-area: header;
+
+}
+
+.summary {
+  grid-area: summary;
+}
+
+.preamble {
+  grid-area: preamble;
+}
+
+#zen-supporting {
+  display: grid;
 }*/
 * {
   box-sizing: border-box;

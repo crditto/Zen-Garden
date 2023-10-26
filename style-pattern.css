@@ -75,7 +75,7 @@ a:hover {
 }
 
 header {
-  height: 500px;
+  height: 700px;
   text-align: center;
   background-image: url(images/watertop.png);
   background-size: 100%;
@@ -92,13 +92,15 @@ footer {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
-  padding: 15% 0;
-  margin-top: -13em;
+  margin-top: -15rem;
+  margin-bottom: 15rem;
+  text-align: center;
 }
 .summary p:last-child {
-  border-top: 1px solid #41658a;
+  border-top: 0.5rem solid #41658a;
   margin-top: 1em;
   padding-top: 1.5em;
+  filter: drop-shadow(10px 10px 4px #45634e);
 }
 .summary a {
   color: #fff;
@@ -107,7 +109,6 @@ footer {
 .preamble {
   background: rgba(255, 255, 255, 0.9);
   color: #333;
-  margin-top: -8%;
   margin-bottom: 5%;
   margin-left: -30%;
   margin-right: 20%;
@@ -118,7 +119,48 @@ footer {
 
 /*.intro {
   padding: 5%;
-}*/
+}
+.page-wrapper {
+  display: grid;
+  grid-template-areas:
+    "intro intro"
+}
+
+section #zen-intro {
+  grid-area: intro;
+}
+
+div #zen-supporting {
+  grid-area: support;
+}
+
+aside .sidebar{
+  grid-area: sidebar;
+}
+*/
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1r-fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header" "summary summary summary" "preamble preamble preamble";
+}
+
+header {
+  grid-area: header;
+}
+
+.summary {
+  grid-area: summary;
+}
+
+.preamble {
+  grid-area: preamble;
+}
+
+#zen-supporting {
+  display: grid;
+}
+
 * {
   box-sizing: border-box;
 }
