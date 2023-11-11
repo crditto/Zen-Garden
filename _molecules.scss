@@ -3,25 +3,35 @@
 
 // use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
 //The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
-[role="banner"] {
-  > h1 {
-    // notice we have to reference the 'atoms' namespace to find our mixins.
-    @include atoms.uppercase($text-light);
-  }
-}
 
 header {
   height: 700px;
   text-align: center;
   background-image: url(images/watertop.png);
   background-size: 100%;
+  margin-top: -2em;
+}
+
+h1 {
+  // notice we have to reference the 'atoms' namespace to find our mixins.
+  @include atoms.uppercase($text-light);
+  @include atoms.animated_div;
+  color: $text-light;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-weight: normal;
+}
+
+header h2 {
+  margin-top: -2.5em;
 }
 
 .summary {
   @include atoms.uppercase($text-light);
-  //padding: 15% 0;
-  margin-top: -15rem;
-  margin-bottom: 15rem;
+  padding: 10%;
+  margin-top: -30rem;
+  margin-bottom: 5rem;
   text-align: center;
   p:last-child {
     @include atoms.divider;

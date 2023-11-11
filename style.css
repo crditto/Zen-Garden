@@ -4,21 +4,114 @@
   display: flex;
   flex-flow: $direction $wrap;
 }*/
+@keyframes animated_div {
+  0% {
+    transform: rotate(0deg);
+    left: 0px;
+  }
+  25% {
+    transform: rotate(20deg);
+    left: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 500px;
+  }
+  55% {
+    transform: rotate(0deg);
+    left: 500px;
+  }
+  70% {
+    transform: scaleX(-1) rotate(0deg);
+    left: 500px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: 0px;
+  }
+}
+@keyframes animated_div {
+  0% {
+    -webkit-transform: rotate(0deg);
+    left: 0px;
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+    left: 0px;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    left: 500px;
+  }
+  55% {
+    -webkit-transform: rotate(0deg);
+    left: 500px;
+  }
+  70% {
+    -webkit-transform: scaleX(-1) rotate(0deg);
+    left: 500px;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    left: 0px;
+  }
+}
+@keyframes animated_div2 {
+  0% {
+    transform: rotate(0deg);
+    right: 0px;
+  }
+  25% {
+    transform: rotate(20deg);
+    right: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    right: 500px;
+  }
+  55% {
+    transform: rotate(0deg);
+    right: 500px;
+  }
+  70% {
+    transform: scaleX(-1) rotate(0deg);
+    right: 500px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    right: 0px;
+  }
+}
+@keyframes animated_div2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    right: 0px;
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+    right: 0px;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    right: 500px;
+  }
+  55% {
+    -webkit-transform: rotate(0deg);
+    right: 500px;
+  }
+  70% {
+    -webkit-transform: scaleX(-1) rotate(0deg);
+    right: 500px;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    right: 0px;
+  }
+}
 h2,
 h3,
 h4 {
   font-family: "Open Sans", Arial, Verdana, sans-serif;
-  margin: 0;
-}
-
-h1 {
-  background: #41658a;
-  color: #fff;
-  display: inline-block;
-  font-weight: normal;
-  margin-top: 10em;
-  margin-bottom: 1em;
-  padding: 0.5em 1em;
 }
 
 h2 {
@@ -71,18 +164,38 @@ a:hover {
   border-color: #41658a;
 }
 
-[role=banner] > h1 {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
 header {
   height: 700px;
   text-align: center;
   background-image: url(images/watertop.png);
   background-size: 100%;
+  margin-top: -2em;
+}
+
+h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 400px;
+  height: 190px;
+  background-image: url(./images/fish_school4.png);
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10em;
+  animation: animated_div 5s 1;
+  -moz-animation: animated_div 5s 1;
+  -webkit-animation: animated_div 5s 1;
+  -o-animation: animated_div 5s 1;
+  color: #fff;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-weight: normal;
+}
+
+header h2 {
+  margin-top: -2.5em;
 }
 
 .summary {
@@ -90,8 +203,9 @@ header {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
-  margin-top: -15rem;
-  margin-bottom: 15rem;
+  padding: 10%;
+  margin-top: -30rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 .summary p:last-child {

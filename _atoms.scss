@@ -2,7 +2,8 @@
 
 
 // mixins to take care of repeated patterns
-@mixin set-font($size: 1em, $line-height: normal, $font: $fonts-body) {
+@mixin set-font($size: 1em, $line-height: normal, $font: $fonts-body) 
+{
   font-family: $font;
   font-size: $size;
   line-height: $line-height;
@@ -13,51 +14,155 @@
   flex-flow: $direction $wrap;
 }*/
 
-@mixin uppercase($color: $text-dark) {
+@mixin uppercase($color: $text-dark) 
+{
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: $color;
 }
 
-@mixin divider($color: $accent1) {
+@mixin divider($color: $accent1) 
+{
   border-top: 3px solid $color;
   margin-top: 1em;
   padding-top: 1.5em;
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
-@mixin divider2($color: $accent1) {
+@mixin divider2($color: $accent1) 
+{
   border-bottom: 3px solid $color;
   margin-top: 1em;
   padding-top: 1.5em;
   padding-bottom: 2rem;
   filter: drop-shadow(10px 10px 4px #45634e);
 }
+
+@mixin animated_div {
+  width:400px;
+  height:190px;
+  background-image: url(./images/fish_school4.png);
+  position: relative;
+  padding:10px;
+  margin-bottom: 10em;
+  animation:animated_div 5s 1;
+  -moz-animation:animated_div 5s 1;
+  -webkit-animation:animated_div 5s 1;
+  -o-animation:animated_div 5s 1;
+  }
+  
+@keyframes animated_div
+{
+  0% {transform: rotate(0deg);left:0px;}
+  25% {transform: rotate(20deg);left:0px;}
+  50% {transform: rotate(0deg);left:500px;}
+  55% {transform: rotate(0deg);left:500px;}
+  70% {transform: scaleX(-1) rotate(0deg);left:500px;}
+  100% {transform: rotate(-360deg);left:0px;}
+}
+  
+@keyframes animated_div
+{
+  0% {-webkit-transform: rotate(0deg);left:0px;}
+  25% {-webkit-transform: rotate(20deg);left:0px;}
+  50% {-webkit-transform: rotate(0deg);left:500px;}
+  55% {-webkit-transform: rotate(0deg);left:500px;}
+  70% {-webkit-transform: scaleX(-1) rotate(0deg);left:500px}
+  100% {-webkit-transform: rotate(-360deg);left:0px;}
+}
+  
+@-moz-keyframes animated_div
+{
+  0%  {-moz-transform: rotate(0deg);left:0px;}
+  25% {-moz-transform: rotate(20deg);left:0px;}
+  50%  {-moz-transform: rotate(0deg);left:500px;}
+  55%  {-moz-transform: rotate(0deg);left:500px;}
+  70%  {-moz-transform: rotate(0deg);left:500px;}
+  100% {-moz-transform: rotate(-360deg);left:0px;}
+}
+  
+@-o-keyframes animated_div
+{
+  0% {transform: rotate(0deg);left:0px;}
+  25% {transform: rotate(20deg);left:0px;}
+  50%  {transform: rotate(0deg);left:500px;}
+  55%  {transform: rotate(0deg);left:500px;}
+  70%  {transform: rotate(0deg);left:500px;}
+  100% {transform: rotate(-360deg);left:0px;}
+}
+
+@mixin animated_div2 
+{
+  width:100px;
+  height:60px;
+  background-image: url(./images/fish_school2.png);
+  position: relative;
+  padding:10px;
+  animation:animated_div2 5s 1;
+  -moz-animation:animated_div2 5s 1;
+  -webkit-animation:animated_div2 5s 1;
+  -o-animation:animated_div2 5s 1;
+}
+    
+@keyframes animated_div2
+{
+  0% {transform: rotate(0deg);right:0px;}
+  25% {transform: rotate(20deg);right:0px;}
+  50% {transform: rotate(0deg);right:500px;}
+  55% {transform: rotate(0deg);right:500px;}
+  70% {transform: scaleX(-1) rotate(0deg);right:500px;}
+  100% {transform: rotate(-360deg);right:0px;}
+}
+    
+@keyframes animated_div2
+{
+0% {-webkit-transform: rotate(0deg);right:0px;}
+25% {-webkit-transform: rotate(20deg);right:0px;}
+50% {-webkit-transform: rotate(0deg);right:500px;}
+55% {-webkit-transform: rotate(0deg);right:500px;}
+70% {-webkit-transform: scaleX(-1) rotate(0deg);right:500px}
+100% {-webkit-transform: rotate(-360deg);right:0px;}
+}
+    
+@-moz-keyframes animated_div2
+{
+0%  {-moz-transform: rotate(0deg);right:0px;}
+25% {-moz-transform: rotate(20deg);right:0px;}
+50%  {-moz-transform: rotate(0deg);right:500px;}
+55%  {-moz-transform: rotate(0deg);right:500px;}
+70%  {-moz-transform: rotate(0deg);right:500px;}
+100% {-moz-transform: rotate(-360deg);right:0px;}
+}
+    
+@-o-keyframes animated_div2
+{
+0% {transform: rotate(0deg);right:0px;}
+25% {transform: rotate(20deg);right:0px;}
+50%  {transform: rotate(0deg);right:500px;}
+55%  {transform: rotate(0deg);right:500px;}
+70%  {transform: rotate(0deg);right:500px;}
+100% {transform: rotate(-360deg);right:0px;}
+}
+
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
 h2,
 h3,
-h4 {
+h4 
+{
   font-family: $fonts-headline;
-  margin: 0;
 }
-h1 {
-  background: $accent1;
-  color: $text-light;
-  display: inline-block;
-  font-weight: normal;
-  margin-top: 10em;
-  margin-bottom: 1em;
-  padding: 0.5em 1em;
-}
-h2 {
+
+h2 
+{
   color: $text-light;
   font-weight: 900; /* Heavy */
   font-size: 6em;
   letter-spacing: 1px;
   line-height: 1em;
 }
-h3 {
+h3 
+{
   font-size: 2.25em;
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
@@ -65,7 +170,8 @@ h3 {
   padding: 0.5em 0 0.25em 0;
   margin-left: 5em;
 }
-h4 {
+h4 
+{
   font-size: 1.5em;
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
@@ -73,24 +179,28 @@ h4 {
   margin: 0.5em 0;
 }
 
-p {
+p 
+{
   @include set-font(1em, 1.5em);
   padding: 0.5em 0;
   margin-left: 10em;
   margin-right: 10em;
 }
 
-.design-name, .designer-name {
+.design-name, .designer-name 
+{
   color: $text-light;
   padding: 5px;
 }
 
-a {
+a 
+{
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: $text-light;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
-a:hover {
+a:hover 
+{
   border-color: $accent1;
 }
