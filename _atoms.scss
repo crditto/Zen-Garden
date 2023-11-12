@@ -47,9 +47,13 @@
   padding:10px;
   margin-bottom: 10em;
   animation:animated_div 5s 1;
-  -moz-animation:animated_div 5s 1;
   -webkit-animation:animated_div 5s 1;
   -o-animation:animated_div 5s 1;
+  -moz-animation:animated_div 5s 1;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   }
   
 @keyframes animated_div
