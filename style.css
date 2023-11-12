@@ -83,6 +83,7 @@ header {
   text-align: center;
   background-image: url(images/watertop.png);
   background-size: 100%;
+  animation: shimmer 3s infinite cubic-bezier(0.42, 0, 1, 1);
 }
 
 .summary {
@@ -93,6 +94,7 @@ header {
   margin-top: -15rem;
   margin-bottom: 15rem;
   text-align: center;
+  animation: staystill 1s infinite;
 }
 .summary p:last-child {
   border-top: 3px solid #41658a;
@@ -261,3 +263,31 @@ body {
   background-color: #237959;
   margin: 0;
 }/*# sourceMappingURL=style.css.map */
+
+
+/* ANIMATION ZONE */
+
+@keyframes shimmer {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes staystill {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
