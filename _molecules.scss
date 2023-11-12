@@ -3,12 +3,14 @@
 
 // use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
 //The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
+body {
+  background: url(images/watertop.png) no-repeat;
+  background-size: 100%;
+}
 
 header {
   height: 700px;
   text-align: center;
-  background-image: url(images/watertop.png);
-  background-size: 100%;
   margin-top: -2em;
 }
 
@@ -21,6 +23,7 @@ h1 {
   justify-content: center;
   align-content: center;
   font-weight: normal;
+  margin-top: 6em;
 }
 
 header h2 {
@@ -109,11 +112,11 @@ header h2 {
 }
 
 footer {
-  height: 400px;
-  background-image: url(images/waterbottom_720.png);
+  height: 600px;
+  background: url(images/waterbottom_720.png);
   background-size: 100%;
-  width: 70rem;
-  margin-top: 5rem;
+  width: 80rem;
+  margin-top: 2rem;
 } 
 
 footer a {
