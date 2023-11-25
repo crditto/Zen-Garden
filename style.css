@@ -327,15 +327,36 @@ footer a {
 .page-wrapper {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
-  grid-template-areas: "intro intro intro" "support support sidebar";
+  grid-template-rows: auto;
+  grid-template-areas: "intro intro intro" "preamble preamble sidebar" "support support sidebar" "explanation explanation sidebar" "participation participation sidebar" "benefits benefits benefits" "requirements requirements requirements" "footer footer footer";
 }
 
 #zen-intro {
   grid-area: intro;
 }
 
+#zen-preamble {
+  grid-area: preamble;
+}
+
 #zen-supporting {
   grid-area: support;
+}
+
+#zen-explanation {
+  grid-area: explanation;
+}
+
+#zen-participation {
+  grid-area: participation;
+}
+
+#zen-benefits {
+  grid-area: benefits;
+}
+
+#zen-requirements {
+  grid-area: requirements;
 }
 
 .sidebar {
