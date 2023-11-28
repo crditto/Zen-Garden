@@ -1,17 +1,221 @@
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Lora&family=Montserrat:wght@300&family=Open+Sans:wght@600&display=swap");
+/*@mixin set-flex($direction: row, $wrap: wrap) {
+  display: flex;
+  flex-flow: $direction $wrap;
+}*/
+@keyframes animated_div {
+  0% {
+    transform: rotate(0deg);
+    left: 0px;
+  }
+  25% {
+    transform: rotate(20deg);
+    left: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 600px;
+  }
+  55% {
+    transform: rotate(0deg);
+    left: 600px;
+  }
+  70% {
+    transform: scaleX(-1) rotate(0deg);
+    left: 600px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: 0px;
+  }
+}
+@keyframes animated_div {
+  0% {
+    -webkit-transform: rotate(0deg);
+    left: 0px;
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+    left: 0px;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    left: 900px;
+  }
+  55% {
+    -webkit-transform: rotate(0deg);
+    left: 900px;
+  }
+  70% {
+    -webkit-transform: scaleX(-1) rotate(0deg);
+    left: 900px;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    left: 0px;
+  }
+}
+@-moz-keyframes animated_div {
+  0% {
+    -moz-transform: rotate(0deg);
+    left: 0px;
+  }
+  25% {
+    -moz-transform: rotate(20deg);
+    left: 0px;
+  }
+  50% {
+    -moz-transform: rotate(0deg);
+    left: 900px;
+  }
+  55% {
+    -moz-transform: rotate(0deg);
+    left: 900px;
+  }
+  70% {
+    -moz-transform: rotate(0deg);
+    left: 900px;
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+    left: 0px;
+  }
+}
+@-o-keyframes animated_div {
+  0% {
+    transform: rotate(0deg);
+    left: 0px;
+  }
+  25% {
+    transform: rotate(20deg);
+    left: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 900px;
+  }
+  55% {
+    transform: rotate(0deg);
+    left: 900px;
+  }
+  70% {
+    transform: rotate(0deg);
+    left: 900px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: 0px;
+  }
+}
+@keyframes animated_div2 {
+  0% {
+    transform: rotate(0deg);
+    right: 0px;
+  }
+  25% {
+    transform: rotate(20deg);
+    right: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    right: 500px;
+  }
+  55% {
+    transform: rotate(0deg);
+    right: 500px;
+  }
+  70% {
+    transform: scaleX(-1) rotate(0deg);
+    right: 500px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    right: 0px;
+  }
+}
+@keyframes animated_div2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    right: 0px;
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+    right: 0px;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    right: 500px;
+  }
+  55% {
+    -webkit-transform: rotate(0deg);
+    right: 500px;
+  }
+  70% {
+    -webkit-transform: scaleX(-1) rotate(0deg);
+    right: 500px;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    right: 0px;
+  }
+}
+@-moz-keyframes animated_div2 {
+  0% {
+    -moz-transform: rotate(0deg);
+    right: 0px;
+  }
+  25% {
+    -moz-transform: rotate(20deg);
+    right: 0px;
+  }
+  50% {
+    -moz-transform: rotate(0deg);
+    right: 500px;
+  }
+  55% {
+    -moz-transform: rotate(0deg);
+    right: 500px;
+  }
+  70% {
+    -moz-transform: rotate(0deg);
+    right: 500px;
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+    right: 0px;
+  }
+}
+@-o-keyframes animated_div2 {
+  0% {
+    transform: rotate(0deg);
+    right: 0px;
+  }
+  25% {
+    transform: rotate(20deg);
+    right: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    right: 500px;
+  }
+  55% {
+    transform: rotate(0deg);
+    right: 500px;
+  }
+  70% {
+    transform: rotate(0deg);
+    right: 500px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    right: 0px;
+  }
+}
 h2,
 h3,
 h4 {
-  font-family: "arial narrow", Arial, Verdana, sans-serif;
-  margin: 0;
-}
-
-h1 {
-  background: #41658a;
-  color: #fff;
-  display: inline-block;
-  font-weight: normal;
-  margin-bottom: 1em;
-  padding: 0.5em 1em;
+  font-family: "Open Sans", Arial, Verdana, sans-serif;
 }
 
 h2 {
@@ -28,6 +232,7 @@ h3 {
   letter-spacing: 1px;
   line-height: 1em;
   padding: 0.5em 0 0.25em 0;
+  margin-left: 5em;
 }
 
 h4 {
@@ -39,16 +244,22 @@ h4 {
 }
 
 p {
-  font-family: verdana, arial, sans-serif;
+  font-family: "Montserrat", arial, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   padding: 0.5em 0;
-  margin: 0;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.design-name, .designer-name {
+  color: #fff;
+  padding: 5px;
 }
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #333;
+  color: #fff;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }

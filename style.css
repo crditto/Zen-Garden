@@ -7,53 +7,53 @@
 @keyframes animated_div {
   0% {
     transform: rotate(0deg);
-    left: 0px;
+    left: 0%;
   }
   25% {
     transform: rotate(20deg);
-    left: 0px;
+    left: 0%;
   }
   50% {
     transform: rotate(0deg);
-    left: 900px;
+    left: 50%;
   }
   55% {
     transform: rotate(0deg);
-    left: 900px;
+    left: 50%;
   }
   70% {
     transform: scaleX(-1) rotate(0deg);
-    left: 900px;
+    left: 50%;
   }
   100% {
     transform: rotate(-360deg);
-    left: 0px;
+    left: 0%;
   }
 }
 @keyframes animated_div {
   0% {
     -webkit-transform: rotate(0deg);
-    left: 0px;
+    left: 0%;
   }
   25% {
     -webkit-transform: rotate(20deg);
-    left: 0px;
+    left: 0%;
   }
   50% {
     -webkit-transform: rotate(0deg);
-    left: 900px;
+    left: 50%;
   }
   55% {
     -webkit-transform: rotate(0deg);
-    left: 900px;
+    left: 50%;
   }
   70% {
     -webkit-transform: scaleX(-1) rotate(0deg);
-    left: 900px;
+    left: 50%;
   }
   100% {
     -webkit-transform: rotate(-360deg);
-    left: 0px;
+    left: 0%;
   }
 }
 @keyframes animated_div2 {
