@@ -211,8 +211,8 @@ header h2 {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
-  padding: 10%;
-  margin-top: -30rem;
+  padding: 5rem;
+  margin-top: -20rem;
   margin-bottom: 5rem;
   text-align: center;
 }
@@ -359,10 +359,6 @@ header h2 {
 .sidebar{
   grid-area: sidebar;
 }*/
-* {
-  box-sizing: border-box;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -377,7 +373,6 @@ body {
   color: #fff;
   background-color: #237959;
   margin: 0;
-  padding: 1em;
 }
 
 footer {

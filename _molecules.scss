@@ -32,8 +32,8 @@ header h2 {
 
 .summary {
   @include atoms.uppercase($text-light);
-  padding: 10%;
-  margin-top: -30rem;
+  padding: 5rem;
+  margin-top: -20rem;
   margin-bottom: 5rem;
   text-align: center;
   p:last-child {
