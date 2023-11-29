@@ -39,10 +39,9 @@
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
-@mixin responsive_p()
-{
-margin-left: 2rem;
-margin-right: 2rem;
+@mixin responsive_p {
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 @mixin animated_div {
@@ -237,8 +236,8 @@ p
 {
   @include set-font(1em, 1.5em);
   padding: 0.5em 0;
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
 .design-name, .designer-name 

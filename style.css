@@ -206,8 +206,8 @@ p {
   font-size: 1em;
   line-height: 1.5em;
   padding: 0.5em 0;
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
 .design-name, .designer-name {
@@ -292,14 +292,8 @@ header h2 {
   color: #fff;
 }
 
-.summary p {
-  margin-left: 10em;
-  margin-right: 10em;
-}
-
 @media screen and (max-width: 768px) {
   .summary p {
-    padding: 0.5em 0;
     margin-left: 2em;
     margin-right: 2em;
   }
@@ -322,6 +316,62 @@ header h2 {
     margin-bottom: 5rem;
     margin-left: -15rem;
     margin-right: 2rem;
+  }
+}
+.explanation p:last-child {
+  border-bottom: 3px solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+@media screen and (max-width: 768px) {
+  .explanation {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+.participation p:last-child {
+  border-bottom: 3px solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+@media screen and (max-width: 768px) {
+  .participation {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+.benefits p:last-child {
+  border-bottom: 3px solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+@media screen and (max-width: 768px) {
+  .benefits {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+.requirements p:last-child {
+  border-bottom: 3px solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+@media screen and (max-width: 768px) {
+  .requirements {
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }
 .sidebar {
@@ -358,50 +408,6 @@ header h2 {
 
 #zen-ressources li {
   margin-bottom: 1em;
-}
-
-.explanation p:last-child {
-  border-bottom: 3px solid #41658a;
-  margin-top: 1em;
-  padding-top: 1.5em;
-  padding-bottom: 2rem;
-  filter: drop-shadow(10px 10px 4px #45634e);
-}
-
-.explanation p {
-  margin-left: 10em;
-  margin-right: 10em;
-}
-
-@media screen and (max-width: 768px) {
-  .explanation p {
-    padding: 0.5em 0;
-    margin-left: 2em;
-    margin-right: 2em;
-  }
-}
-.participation p:last-child {
-  border-bottom: 3px solid #41658a;
-  margin-top: 1em;
-  padding-top: 1.5em;
-  padding-bottom: 2rem;
-  filter: drop-shadow(10px 10px 4px #45634e);
-}
-
-.benefits p:last-child {
-  border-bottom: 3px solid #41658a;
-  margin-top: 1em;
-  padding-top: 1.5em;
-  padding-bottom: 2rem;
-  filter: drop-shadow(10px 10px 4px #45634e);
-}
-
-.requirements p:last-child {
-  border-bottom: 3px solid #41658a;
-  margin-top: 1em;
-  padding-top: 1.5em;
-  padding-bottom: 2rem;
-  filter: drop-shadow(10px 10px 4px #45634e);
 }
 
 .zen-validate-html {
@@ -550,7 +556,7 @@ footer {
   background: url(images/waterbottom_720.png) no-repeat;
   background-size: 100%;
   margin-top: 2rem;
-  width: 130%;
+  width: 150%;
 }
 
 footer a {

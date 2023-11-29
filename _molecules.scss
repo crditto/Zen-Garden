@@ -51,7 +51,7 @@ header h2 {
 
 @media screen and (max-width:768px) { 
   .summary p {
-    @include responsive_p;
+    @include atoms.responsive_p;
   }
 }
 
@@ -73,6 +73,51 @@ header h2 {
     margin-bottom: 5rem;
     margin-left: -15rem;
     margin-right: 2rem;
+  }
+}
+
+.explanation {
+  p:last-child {
+    @include atoms.divider2;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .explanation {
+    @include atoms.responsive_p;
+  }
+}
+.participation {
+  p:last-child {
+    @include atoms.divider2;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .participation {
+    @include atoms.responsive_p;
+  }
+}
+.benefits {
+  p:last-child {
+    @include atoms.divider2;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .benefits {
+    @include atoms.responsive_p;
+  }
+}
+.requirements {
+  p:last-child {
+    @include atoms.divider2;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .requirements {
+    @include atoms.responsive_p;
   }
 }
 
@@ -107,59 +152,6 @@ header h2 {
 
 #zen-ressources li{
   margin-bottom: 1em;
-}
-
-.explanation {
-  p:last-child {
-    @include atoms.divider2;
-  }
-}
-
-
-@media screen and (max-width:768px)
-{
-  .explanation p {
-  @include atoms.responsive_p;
-  }
-}
-
-.participation {
-  p:last-child {
-    @include atoms.divider2;
-  }
-}
-
-
-@media screen and (max-width:768px)
-{
-  .participation p {
-  @include atoms.responsive_p;
-  }
-}
-
-
-.benefits {
-  p:last-child {
-    @include atoms.divider2;
-  }
-}
-
-@media screen and (max-width:768px) { 
-  .benefits p {
-    @include atoms.responsive_p;
-  }
-}
-
-.requirements {
-  p:last-child {
-    @include atoms.divider2;
-  }
-}
-
-@media screen and (min-width:768px) { 
-  .requirements p {
-    @include responsive_p;
-  }
 }
 
 .zen-validate-html {

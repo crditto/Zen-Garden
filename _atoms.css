@@ -7,105 +7,219 @@
 @keyframes animated_div {
   0% {
     transform: rotate(0deg);
-    left: 0px;
+    left: 0%;
   }
   25% {
-    transform: rotate(20deg);
-    left: 0px;
+    transform: rotate(0deg);
+    left: 0%;
   }
   50% {
-    transform: rotate(0deg);
-    left: 600px;
+    transform: rotate(-360deg);
+    left: 0%;
   }
-  55% {
-    transform: rotate(0deg);
-    left: 600px;
+  65% {
+    transform: rotate(360deg);
+    left: 0%;
   }
-  70% {
-    transform: scaleX(-1) rotate(0deg);
-    left: 600px;
+  85% {
+    transform: rotate(0deg);
+    left: 0%;
+  }
+  75% {
+    transform: rotate(0deg);
+    left: 0%;
   }
   100% {
     transform: rotate(-360deg);
-    left: 0px;
+    left: 0%;
   }
 }
 @keyframes animated_div {
   0% {
     -webkit-transform: rotate(0deg);
-    left: 0px;
+    left: 0%;
   }
   25% {
-    -webkit-transform: rotate(20deg);
-    left: 0px;
+    -webkit-transform: rotate(0deg);
+    left: 0%;
   }
   50% {
-    -webkit-transform: rotate(0deg);
-    left: 900px;
+    -webkit-transform: rotate(-360deg);
+    left: 0%;
   }
-  55% {
-    -webkit-transform: rotate(0deg);
-    left: 900px;
+  65% {
+    -webkit-transform: rotate(360deg);
+    left: 0%;
   }
-  70% {
-    -webkit-transform: scaleX(-1) rotate(0deg);
-    left: 900px;
+  85% {
+    -webkit-transform: rotate(0deg);
+    left: 0%;
+  }
+  75% {
+    -webkit-ansform: rotate(0deg);
+    left: 0%;
   }
   100% {
     -webkit-transform: rotate(-360deg);
-    left: 0px;
+    left: 0%;
   }
 }
 @-moz-keyframes animated_div {
   0% {
     -moz-transform: rotate(0deg);
-    left: 0px;
+    left: 0%;
   }
   25% {
     -moz-transform: rotate(20deg);
-    left: 0px;
+    left: 0%;
   }
   50% {
     -moz-transform: rotate(0deg);
-    left: 900px;
+    left: 8%;
   }
   55% {
     -moz-transform: rotate(0deg);
-    left: 900px;
+    left: 80%;
   }
   70% {
-    -moz-transform: rotate(0deg);
-    left: 900px;
+    -moz-transform: scaleX(-1) rotate(0deg);
+    left: 8%;
   }
   100% {
     -moz-transform: rotate(-360deg);
-    left: 0px;
+    left: 0%;
   }
 }
 @-o-keyframes animated_div {
   0% {
     transform: rotate(0deg);
-    left: 0px;
+    left: 0%;
   }
   25% {
     transform: rotate(20deg);
-    left: 0px;
+    left: 0%;
   }
   50% {
     transform: rotate(0deg);
-    left: 900px;
+    left: 50%;
   }
   55% {
     transform: rotate(0deg);
-    left: 900px;
+    left: 50%;
   }
   70% {
-    transform: rotate(0deg);
-    left: 900px;
+    transform: scaleX(-1) rotate(0deg);
+    left: 50%;
   }
   100% {
     transform: rotate(-360deg);
-    left: 0px;
+    left: 0%;
+  }
+}
+@media screen and (min-width: 732px) {
+  @keyframes animated_div {
+    0% {
+      transform: rotate(0deg);
+      left: 0%;
+    }
+    25% {
+      transform: rotate(20deg);
+      left: 0%;
+    }
+    50% {
+      transform: rotate(0deg);
+      left: 50%;
+    }
+    55% {
+      transform: rotate(0deg);
+      left: 50%;
+    }
+    70% {
+      transform: scaleX(-1) rotate(0deg);
+      left: 50%;
+    }
+    100% {
+      transform: rotate(-360deg);
+      left: 0%;
+    }
+  }
+  @keyframes animated_div {
+    0% {
+      -webkit-transform: rotate(0deg);
+      left: 0%;
+    }
+    25% {
+      -webkit-transform: rotate(20deg);
+      left: 0%;
+    }
+    50% {
+      -webkit-transform: rotate(0deg);
+      left: 50%;
+    }
+    55% {
+      -webkit-transform: rotate(0deg);
+      left: 50%;
+    }
+    70% {
+      -webkit-transform: scaleX(-1) rotate(0deg);
+      left: 50%;
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+      left: 0%;
+    }
+  }
+  @-moz-keyframes animated_div {
+    0% {
+      -moz-transform: rotate(0deg);
+      left: 0%;
+    }
+    25% {
+      -moz-transform: rotate(20deg);
+      left: 0%;
+    }
+    50% {
+      -moz-transform: rotate(0deg);
+      left: 50%;
+    }
+    55% {
+      -moz-transform: rotate(0deg);
+      left: 50%;
+    }
+    70% {
+      -moz-transform: scaleX(-1) rotate(0deg);
+      left: 50%;
+    }
+    100% {
+      -moz-transform: rotate(-360deg);
+      left: 0%;
+    }
+  }
+  @-o-keyframes animated_div {
+    0% {
+      transform: rotate(0deg);
+      left: 0%;
+    }
+    25% {
+      transform: rotate(20deg);
+      left: 0%;
+    }
+    50% {
+      transform: rotate(0deg);
+      left: 50%;
+    }
+    55% {
+      transform: rotate(0deg);
+      left: 50%;
+    }
+    70% {
+      transform: scaleX(-1) rotate(0deg);
+      left: 50%;
+    }
+    100% {
+      transform: rotate(-360deg);
+      left: 0%;
+    }
   }
 }
 @keyframes animated_div2 {
