@@ -385,6 +385,7 @@ header h2 {
 }
 .design-selection li {
   margin-bottom: 1em;
+  list-style-type: none;
 }
 
 #design-selection h3 {
@@ -404,10 +405,12 @@ header h2 {
 }
 .design-archives li {
   margin-bottom: 1em;
+  list-style-type: none;
 }
 
-#zen-ressources li {
+#zen-resources li {
   margin-bottom: 1em;
+  list-style-type: none;
 }
 
 .zen-validate-html {
