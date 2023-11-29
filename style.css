@@ -10,20 +10,24 @@
     left: 0%;
   }
   25% {
-    transform: rotate(20deg);
+    transform: rotate(0deg);
     left: 0%;
   }
   50% {
-    transform: rotate(0deg);
-    left: 50%;
+    transform: rotate(-360deg);
+    left: 0%;
   }
-  55% {
-    transform: rotate(0deg);
-    left: 50%;
+  65% {
+    transform: rotate(360deg);
+    left: 0%;
   }
-  70% {
-    transform: scaleX(-1) rotate(0deg);
-    left: 50%;
+  85% {
+    transform: rotate(0deg);
+    left: 0%;
+  }
+  75% {
+    transform: rotate(0deg);
+    left: 0%;
   }
   100% {
     transform: rotate(-360deg);
@@ -36,24 +40,82 @@
     left: 0%;
   }
   25% {
-    -webkit-transform: rotate(20deg);
+    -webkit-transform: rotate(0deg);
     left: 0%;
   }
   50% {
-    -webkit-transform: rotate(0deg);
-    left: 50%;
+    -webkit-transform: rotate(-360deg);
+    left: 0%;
   }
-  55% {
-    -webkit-transform: rotate(0deg);
-    left: 50%;
+  65% {
+    -webkit-transform: rotate(360deg);
+    left: 0%;
   }
-  70% {
-    -webkit-transform: scaleX(-1) rotate(0deg);
-    left: 50%;
+  85% {
+    -webkit-transform: rotate(0deg);
+    left: 0%;
+  }
+  75% {
+    -webkit-ansform: rotate(0deg);
+    left: 0%;
   }
   100% {
     -webkit-transform: rotate(-360deg);
     left: 0%;
+  }
+}
+@media screen and (min-width: 732px) {
+  @keyframes animated_div {
+    0% {
+      transform: rotate(0deg);
+      left: 0%;
+    }
+    25% {
+      transform: rotate(20deg);
+      left: 0%;
+    }
+    50% {
+      transform: rotate(0deg);
+      left: 50%;
+    }
+    55% {
+      transform: rotate(0deg);
+      left: 50%;
+    }
+    70% {
+      transform: scaleX(-1) rotate(0deg);
+      left: 50%;
+    }
+    100% {
+      transform: rotate(-360deg);
+      left: 0%;
+    }
+  }
+  @keyframes animated_div {
+    0% {
+      -webkit-transform: rotate(0deg);
+      left: 0%;
+    }
+    25% {
+      -webkit-transform: rotate(20deg);
+      left: 0%;
+    }
+    50% {
+      -webkit-transform: rotate(0deg);
+      left: 50%;
+    }
+    55% {
+      -webkit-transform: rotate(0deg);
+      left: 50%;
+    }
+    70% {
+      -webkit-transform: scaleX(-1) rotate(0deg);
+      left: 50%;
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+      left: 0%;
+    }
   }
 }
 @keyframes animated_div2 {
@@ -172,9 +234,13 @@ body {
 header {
   height: 700px;
   text-align: center;
-  margin-top: -2em;
 }
 
+@media screen and (max-width: 438px) {
+  header {
+    margin-bottom: 5rem;
+  }
+}
 h1 {
   font-weight: 300;
   letter-spacing: 2px;
@@ -226,6 +292,18 @@ header h2 {
   color: #fff;
 }
 
+.summary p {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+@media screen and (max-width: 768px) {
+  .summary p {
+    padding: 0.5em 0;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
 .preamble {
   background: rgba(255, 255, 255, 0.9);
   color: #333;
@@ -238,9 +316,18 @@ header h2 {
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
+@media screen and (max-width: 768px) {
+  .preamble {
+    margin-top: -8rem;
+    margin-bottom: 5rem;
+    margin-left: -15rem;
+    margin-right: 2rem;
+  }
+}
 .sidebar {
-  margin-top: -33rem;
+  margin-top: -40rem;
   margin-right: 1rem;
+  padding: 2rem;
 }
 
 .design-selection {
@@ -281,6 +368,18 @@ header h2 {
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
+.explanation p {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+@media screen and (max-width: 768px) {
+  .explanation p {
+    padding: 0.5em 0;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
 .participation p:last-child {
   border-bottom: 3px solid #41658a;
   margin-top: 1em;
@@ -309,25 +408,83 @@ header h2 {
   margin-left: 24rem;
 }
 
-/*.intro {
-  padding: 5%;
-}*/
-/*
-.page-wrapper {
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "intro intro intro"
-    "preamble preamble sidebar"
-    "support support sidebar"
-    "explanation explanation sidebar"
-    "participation participation sidebar"
-    "benefits benefits benefits"
-    "requirements requirements requirements"
-    "footer footer footer"
+/*@media screen and (max-width: 1400px) { 
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+      "intro intro intro intro"
+      "preamble preamble preamble preamble"
+      "support support support support"
+      "explanation explanation explanation explanation"
+      "participation participation participation participation"
+      "benefits benefits benefits benefits"
+      "requirements requirements requirements requirements"
+      "selection archives resources ."
+      "footer footer footer footer"
+  }
 }
 
+@media screen and (min-width: 1200px) { 
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "intro intro intro intro"
+    "preamble preamble preamble sidebar"
+    "support support support sidebar"
+    "explanation explanation explanation sidebar"
+    "participation participation participation sidebar"
+    "benefits benefits benefits benefits"
+    "requirements requirements requirements requirements"
+    "footer footer footer footer"
+}
+}
+*/
+@media screen and (min-width: 768px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "intro intro intro intro" "preamble preamble preamble sidebar" "support support support sidebar" "explanation explanation explanation sidebar" "participation participation participation sidebar" "benefits benefits benefits benefits" "requirements requirements requirements requirements" "footer footer footer footer";
+  }
+}
+/*
+@media screen and (max-width: 768px) { 
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+      "intro intro intro intro"
+      "preamble preamble preamble preamble"
+      "support support support support"
+      "explanation explanation explanation explanation"
+      "participation participation participation participation"
+      "benefits benefits benefits benefits"
+      "requirements requirements requirements requirements"
+      "selection archives resources ."
+      "footer footer footer footer"
+  }
+}  
+/*
+@media screen and (min-width:576px) { 
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "intro intro intro intro"
+      "preamble preamble preamble sidebar"
+      "support support support sidebar"
+      "explanation explanation explanation sidebar"
+      "participation participation participation sidebar"
+      "benefits benefits benefits benefits"
+      "selection archives resources ."
+      "footer footer footer footer"
+  }
+}
+    */
 #zen-intro {
   grid-area: intro;
 }
@@ -356,9 +513,22 @@ header h2 {
   grid-area: requirements;
 }
 
-.sidebar{
+.sidebar {
   grid-area: sidebar;
-}*/
+}
+
+#design-selection {
+  grid-area: selection;
+}
+
+#design-archives {
+  grid-area: archives;
+}
+
+#zen-resources {
+  grid-area: resources;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -377,9 +547,10 @@ body {
 
 footer {
   height: 600px;
-  background: url(images/waterbottom_720.png);
+  background: url(images/waterbottom_720.png) no-repeat;
   background-size: 100%;
   margin-top: 2rem;
+  width: 130%;
 }
 
 footer a {

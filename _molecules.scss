@@ -11,7 +11,12 @@ body {
 header {
   height: 700px;
   text-align: center;
-  margin-top: -2em;
+}
+
+@media screen and (max-width:438px) { 
+  header {
+    margin-bottom: 5rem;
+  }
 }
 
 h1 {
@@ -43,6 +48,13 @@ header h2 {
     color: $text-light; //in this case the link wants to be light instead of the default dark
   }
 }
+
+@media screen and (max-width:768px) { 
+  .summary p {
+    @include responsive_p;
+  }
+}
+
 .preamble {
   background: rgba(255, 255, 255, 0.9);
   color: $text-dark;
@@ -55,9 +67,19 @@ header h2 {
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
+@media screen and (max-width:768px) { 
+  .preamble {
+    margin-top: -8rem;
+    margin-bottom: 5rem;
+    margin-left: -15rem;
+    margin-right: 2rem;
+  }
+}
+
 .sidebar {
-  margin-top: -33rem;
+  margin-top: -40rem;
   margin-right: 1rem;
+  padding:2rem;
   
 }
 
@@ -93,11 +115,28 @@ header h2 {
   }
 }
 
+
+@media screen and (max-width:768px)
+{
+  .explanation p {
+  @include atoms.responsive_p;
+  }
+}
+
 .participation {
   p:last-child {
     @include atoms.divider2;
   }
 }
+
+
+@media screen and (max-width:768px)
+{
+  .participation p {
+  @include atoms.responsive_p;
+  }
+}
+
 
 .benefits {
   p:last-child {
@@ -105,9 +144,21 @@ header h2 {
   }
 }
 
+@media screen and (max-width:768px) { 
+  .benefits p {
+    @include atoms.responsive_p;
+  }
+}
+
 .requirements {
   p:last-child {
     @include atoms.divider2;
+  }
+}
+
+@media screen and (min-width:768px) { 
+  .requirements p {
+    @include responsive_p;
   }
 }
 

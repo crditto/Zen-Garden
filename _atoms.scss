@@ -39,6 +39,12 @@
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
+@mixin responsive_p()
+{
+margin-left: 2rem;
+margin-right: 2rem;
+}
+
 @mixin animated_div {
   width:400px;
   height:190px;
@@ -59,20 +65,22 @@
 @keyframes animated_div
 {
   0% {transform: rotate(0deg);left:0%;}
-  25% {transform: rotate(20deg);left:0%;}
-  50% {transform: rotate(0deg);left:50%;}
-  55% {transform: rotate(0deg);left:50%;}
-  70% {transform: scaleX(-1) rotate(0deg);left:50%;}
+  25% {transform: rotate(0deg);left:0%;}
+  50% {transform: rotate(-360deg);left:0%;}
+  65% {transform: rotate(360deg);left:0%;}
+  85% {transform: rotate(0deg);left:0%;}
+  75% {transform: rotate(0deg);left:0%;}
   100% {transform: rotate(-360deg);left:0%;}
 }
   
 @keyframes animated_div
 {
   0% {-webkit-transform: rotate(0deg);left:0%;}
-  25% {-webkit-transform: rotate(20deg);left:0%;}
-  50% {-webkit-transform: rotate(0deg);left:50%;}
-  55% {-webkit-transform: rotate(0deg);left:50%;}
-  70% {-webkit-transform: scaleX(-1) rotate(0deg);left:50%}
+  25% {-webkit-transform: rotate(0deg);left:0%;}
+  50% {-webkit-transform: rotate(-360deg);left:0%;}
+  65% {-webkit-transform: rotate(360deg);left:0%;}
+  85% {-webkit-transform: rotate(0deg);left:0%;}
+  75% {-webkit-ansform: rotate(0deg);left:0%;}
   100% {-webkit-transform: rotate(-360deg);left:0%;}
 }
   
@@ -80,9 +88,9 @@
 {
   0%  {-moz-transform: rotate(0deg);left:0%;}
   25% {-moz-transform: rotate(20deg);left:0%;}
-  50%  {-moz-transform: rotate(0deg);left: 50%;}
-  55%  {-moz-transform: rotate(0deg);left:50%;}
-  70%  {-moz-transform: scaleX(-1) rotate(0deg);left:50%}
+  50%  {-moz-transform: rotate(0deg);left:8%;}
+  55%  {-moz-transform: rotate(0deg);left:80%;}
+  70%  {-moz-transform: scaleX(-1) rotate(0deg);left:8%}
   100% {-moz-transform: rotate(-360deg);left:0%;}
 }
   
@@ -96,6 +104,48 @@
   100% {transform: rotate(-360deg);left:0%;}
 }
 
+@media screen and (min-width:732px) { 
+
+  @keyframes animated_div
+  {
+    0% {transform: rotate(0deg);left:0%;}
+    25% {transform: rotate(20deg);left:0%;}
+    50% {transform: rotate(0deg);left:50%;}
+    55% {transform: rotate(0deg);left:50%;}
+    70% {transform: scaleX(-1) rotate(0deg);left:50%;}
+    100% {transform: rotate(-360deg);left:0%;}
+  }
+    
+  @keyframes animated_div
+  {
+    0% {-webkit-transform: rotate(0deg);left:0%;}
+    25% {-webkit-transform: rotate(20deg);left:0%;}
+    50% {-webkit-transform: rotate(0deg);left:50%;}
+    55% {-webkit-transform: rotate(0deg);left:50%;}
+    70% {-webkit-transform: scaleX(-1) rotate(0deg);left:50%}
+    100% {-webkit-transform: rotate(-360deg);left:0%;}
+  }
+    
+  @-moz-keyframes animated_div
+  {
+    0%  {-moz-transform: rotate(0deg);left:0%;}
+    25% {-moz-transform: rotate(20deg);left:0%;}
+    50%  {-moz-transform: rotate(0deg);left: 50%;}
+    55%  {-moz-transform: rotate(0deg);left:50%;}
+    70%  {-moz-transform: scaleX(-1) rotate(0deg);left:50%}
+    100% {-moz-transform: rotate(-360deg);left:0%;}
+  }
+    
+  @-o-keyframes animated_div
+  {
+    0% {transform: rotate(0deg);left:0%;}
+    25% {transform: rotate(20deg);left:0%;}
+    50%  {transform: rotate(0deg);left:50%;}
+    55%  {transform: rotate(0deg);left:50%;}
+    70%  {transform: scaleX(-1) rotate(0deg);left:50%}
+    100% {transform: rotate(-360deg);left:0%;}
+  }
+}
 @mixin animated_div2 
 {
   width:100px;
