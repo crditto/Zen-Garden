@@ -257,3 +257,25 @@ a:hover
 {
   border-color: $accent1;
 }
+
+@media screen and (max-width:768px) {
+
+  p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  h3 {
+    margin: 0;
+  }
+  h2 {
+    font-size: 40pt;
+  }
+  .preamble {
+    margin: 0;
+    text-align: center;
+  }
+
+  .summary {
+    padding: 0;
+  }
+}

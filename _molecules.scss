@@ -165,3 +165,10 @@ header h2 {
 .zen-validate-html {
   margin-left: 24rem;
 }
+
+@media screen and (max-width:768px) {
+
+  .summary {
+    padding: 0;
+  }
+}
