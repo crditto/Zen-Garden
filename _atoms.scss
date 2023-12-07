@@ -267,11 +267,22 @@ a:hover
   #zen-preamble p {
     padding-left: 100px;
   }
+  #zen-preamble h3 {
+    padding-left: 75px;
+  }
 
   h3 {
     margin: 0;
-    padding-left: 75px;
+    margin-top: 50px;
   }
+
+  footer {
+    width: 100%!important;
+  }
+  footer a {
+    margin: 1.5rem!important;
+  }
+
   h2 {
     font-size: 40pt;
   }

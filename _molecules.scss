@@ -86,6 +86,13 @@ header h2 {
   .explanation {
     @include atoms.responsive_p;
   }
+
+  .sidebar h3 .resources{
+    background-image: url(images/waterbottom_720.png) no-repeat!important;
+  }
+  footer {
+    background-image: none!important;
+  }
 }
 .participation {
   p:last-child {
