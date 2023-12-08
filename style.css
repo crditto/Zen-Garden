@@ -460,40 +460,6 @@ header h2 {
     padding: 0;
   }
 }
-/*@media screen and (max-width: 1400px) { 
-  .page-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 1fr;
-    grid-template-areas:
-      "intro intro intro intro"
-      "preamble preamble preamble preamble"
-      "support support support support"
-      "explanation explanation explanation explanation"
-      "participation participation participation participation"
-      "benefits benefits benefits benefits"
-      "requirements requirements requirements requirements"
-      "selection archives resources ."
-      "footer footer footer footer"
-  }
-}
-
-@media screen and (min-width: 1200px) { 
-.page-wrapper {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "intro intro intro intro"
-    "preamble preamble preamble sidebar"
-    "support support support sidebar"
-    "explanation explanation explanation sidebar"
-    "participation participation participation sidebar"
-    "benefits benefits benefits benefits"
-    "requirements requirements requirements requirements"
-    "footer footer footer footer"
-}
-}
-*/
 @media screen and (min-width: 768px) {
   .page-wrapper {
     display: grid;
@@ -507,41 +473,6 @@ header h2 {
     grid-template-columns: 1fr;
   }
 }
-/*
-@media screen and (max-width: 768px) { 
-  .page-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 1fr;
-    grid-template-areas:
-      "intro intro intro intro"
-      "preamble preamble preamble preamble"
-      "support support support support"
-      "explanation explanation explanation explanation"
-      "participation participation participation participation"
-      "benefits benefits benefits benefits"
-      "requirements requirements requirements requirements"
-      "selection archives resources ."
-      "footer footer footer footer"
-  }
-}  
-/*
-@media screen and (min-width:576px) { 
-  .page-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "intro intro intro intro"
-      "preamble preamble preamble sidebar"
-      "support support support sidebar"
-      "explanation explanation explanation sidebar"
-      "participation participation participation sidebar"
-      "benefits benefits benefits benefits"
-      "selection archives resources ."
-      "footer footer footer footer"
-  }
-}
-    */
 #zen-intro {
   grid-area: intro;
 }
