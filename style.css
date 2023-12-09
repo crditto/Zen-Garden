@@ -428,6 +428,15 @@ header h2 {
   list-style-type: none;
 }
 
+.select:hover {
+  color: orange;
+  list-style-type: none;
+}
+
+.designer-name:hover {
+  color: orange;
+}
+
 #design-selection h3 {
   margin-left: 1em;
 }
