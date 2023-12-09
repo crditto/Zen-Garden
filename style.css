@@ -309,7 +309,7 @@ h1 {
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
-  color: #fff;
+  color: #08539e;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -332,7 +332,7 @@ header h2 {
   text-align: center;
 }
 .summary p:last-child {
-  border-top: 3px solid #41658a;
+  border-top: 3px solid #386b9f;
   margin-top: 1em;
   padding-top: 1.5em;
   filter: drop-shadow(10px 10px 4px #45634e);
@@ -357,7 +357,8 @@ header h2 {
 }
 .preamble {
   background: rgba(255, 255, 255, 0.9);
-  color: #333;
+  background-color: #386b9f;
+  color: #fff;
   margin-top: -8rem;
   margin-bottom: 5rem;
   margin-left: -20rem;
@@ -376,7 +377,7 @@ header h2 {
   }
 }
 .explanation p:last-child {
-  border-bottom: 3px solid #41658a;
+  border-bottom: 3px solid #386b9f;
   margin-top: 1em;
   padding-top: 1.5em;
   padding-bottom: 2rem;
@@ -396,7 +397,7 @@ header h2 {
   }
 }
 .participation p:last-child {
-  border-bottom: 3px solid #41658a;
+  border-bottom: 3px solid #386b9f;
   margin-top: 1em;
   padding-top: 1.5em;
   padding-bottom: 2rem;
@@ -418,7 +419,7 @@ header h2 {
   }
 }
 .benefits p:last-child {
-  border-bottom: 3px solid #41658a;
+  border-bottom: 3px solid #386b9f;
   margin-top: 1em;
   padding-top: 1.5em;
   padding-bottom: 2rem;
@@ -432,7 +433,7 @@ header h2 {
   }
 }
 .requirements p:last-child {
-  border-bottom: 3px solid #41658a;
+  border-bottom: 3px solid #386b9f;
   margin-top: 1em;
   padding-top: 1.5em;
   padding-bottom: 2rem;
@@ -501,6 +502,10 @@ header h2 {
 
 #zen-resources h3 {
   margin-left: 1em;
+}
+
+.zen-resources a {
+  color: rgb(255, 165, 0);
 }
 
 .zen-resources a:hover {

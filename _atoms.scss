@@ -25,7 +25,7 @@
   color: $color;
 }
 
-@mixin divider($color: $accent1) 
+@mixin divider($color: $border) 
 {
   border-top: 3px solid $color;
   margin-top: 1em;
@@ -33,7 +33,7 @@
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
-@mixin divider2($color: $accent1) 
+@mixin divider2($color: $border) 
 {
   border-bottom: 3px solid $color;
   margin-top: 1em;

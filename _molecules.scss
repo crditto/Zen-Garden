@@ -25,7 +25,7 @@ h1 {
   // notice we have to reference the 'atoms' namespace to find our mixins.
   @include atoms.uppercase($text-light);
   @include atoms.animated_div;
-  color: $text-light;
+  color: $anitext;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -67,7 +67,8 @@ header h2 {
 
 .preamble {
   background: rgba(255, 255, 255, 0.9);
-  color: $text-dark;
+  background-color: $border;
+  color: $text-light;
   margin-top: -8rem;
   margin-bottom: 5rem;
   margin-left: -20rem;
@@ -204,6 +205,10 @@ header h2 {
 
 #zen-resources h3 {
   margin-left: 1em;
+}
+
+.zen-resources a {
+  @include atoms.link;
 }
 
 .zen-resources a:hover {
