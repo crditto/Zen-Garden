@@ -8,11 +8,15 @@ body {
   background-position: top, bottom;
   background-repeat: no-repeat, no-repeat;
   background-size: 100%;
+  // animation: waterglow 4s linear infinite;
 }
+
 
 header {
   height: 700px;
   text-align: center;
+  animation: waterglow 4s linear infinite;
+  
 }
 
 @media screen and (max-width:438px) { 
@@ -100,9 +104,6 @@ header h2 {
 
   .sidebar h3 .resources{
     background-image: url(images/waterbottom_720.png) no-repeat!important;
-  }
-  footer {
-    background-image: none!important;
   }
 }
 
@@ -240,5 +241,17 @@ footer a:hover {
 @media screen and (max-width:768px) {
   .summary {
     padding: 0;
+  }
+}
+
+@keyframes waterglow {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 35%;
+  }
+  100% {
+    opacity: 100%;
   }
 }

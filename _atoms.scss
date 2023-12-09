@@ -222,6 +222,10 @@ html {
   box-sizing: inherit;
 }
 
+abbr {
+  text-decoration: none;
+}
+
 body {
   font-family: $fonts-body;
   font-size: 85%;
