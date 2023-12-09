@@ -120,7 +120,7 @@
     right: 0px;
   }
   25% {
-    transform: rotate(20deg);
+    transform: rotate(0deg);
     right: 0px;
   }
   50% {
@@ -146,7 +146,7 @@
     right: 0px;
   }
   25% {
-    -webkit-transform: rotate(20deg);
+    -webkit-transform: rotate(0deg);
     right: 0px;
   }
   50% {
@@ -343,6 +343,7 @@ header h2 {
 
 .summary a {
   color: rgb(255, 165, 0);
+  text-decoration: none;
 }
 
 .summary a:hover {
@@ -396,6 +397,24 @@ header h2 {
     background-image: none !important;
   }
 }
+.extra1 {
+  width: 100px;
+  height: 60px;
+  background-image: url(./images/fish_school2.png);
+  position: relative;
+  margin-top: 4em;
+  margin-left: 48em;
+  padding: 10px;
+  animation: animated_div2 5s 1;
+  -moz-animation: animated_div2 5s 1;
+  -webkit-animation: animated_div2 5s 1;
+  -o-animation: animated_div2 5s 1;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
+
 .participation p:last-child {
   border-bottom: 3px solid #386b9f;
   margin-top: 1em;
@@ -406,6 +425,7 @@ header h2 {
 
 .participation a {
   color: rgb(255, 165, 0);
+  text-decoration: none;
 }
 
 .participation a:hover {
@@ -442,6 +462,7 @@ header h2 {
 
 .requirements a {
   color: rgb(255, 165, 0);
+  text-decoration: none;
 }
 
 .requirements a:hover {
@@ -470,6 +491,7 @@ header h2 {
 
 .design-selection a {
   color: rgb(255, 165, 0);
+  text-decoration: none;
 }
 
 .design-selection a:hover {
@@ -486,6 +508,7 @@ header h2 {
 
 .design-archives a {
   color: rgb(255, 165, 0);
+  text-decoration: none;
 }
 
 .design-archives a:hover {
@@ -506,6 +529,7 @@ header h2 {
 
 .zen-resources a {
   color: rgb(255, 165, 0);
+  text-decoration: none;
 }
 
 .zen-resources a:hover {
@@ -523,6 +547,7 @@ header h2 {
 
 footer a {
   color: rgb(255, 165, 0);
+  text-decoration: none;
   margin: 2em;
 }
 

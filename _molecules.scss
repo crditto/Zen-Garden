@@ -106,6 +106,10 @@ header h2 {
   }
 }
 
+.extra1 {
+  @include atoms.animated_div2;
+}
+
 .participation {
   p:last-child {
     @include atoms.divider2;
