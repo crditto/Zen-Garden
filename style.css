@@ -428,9 +428,8 @@ header h2 {
   list-style-type: none;
 }
 
-.select:hover {
+.design-name:hover {
   color: orange;
-  list-style-type: none;
 }
 
 .designer-name:hover {
