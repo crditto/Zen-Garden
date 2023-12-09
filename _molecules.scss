@@ -51,6 +51,14 @@ header h2 {
   }
 }
 
+.summary a {
+  @include atoms.link;
+}
+
+.summary a:hover {
+  @include atoms.hover;
+}
+
 @media screen and (max-width:768px) { 
   .summary p {
     @include atoms.responsive_p;
@@ -96,10 +104,19 @@ header h2 {
     background-image: none!important;
   }
 }
+
 .participation {
   p:last-child {
     @include atoms.divider2;
   }
+}
+
+.participation a {
+  @include atoms.link;
+}
+
+.participation a:hover {
+  @include atoms.hover
 }
 
 @media screen and (max-width:768px) {
@@ -124,6 +141,14 @@ header h2 {
   }
 }
 
+.requirements a {
+  @include atoms.link;
+}
+
+.requirements a:hover {
+  @include atoms.hover;
+}
+
 @media screen and (max-width:768px) {
   .requirements {
     @include atoms.responsive_p;
@@ -145,14 +170,13 @@ header h2 {
   }
 }
 
-.design-name:hover {
-  color: orange;
+.design-selection a {
+  @include atoms.link;
 }
 
-.designer-name:hover {
-  color: orange;
+.design-selection a:hover {
+  @include atoms.hover;
 }
-
 
 #design-selection h3 {
   margin-left: 1em;
@@ -162,8 +186,12 @@ header h2 {
   margin-left: 1em;
 }
 
-#zen-resources h3 {
-  margin-left: 1em;
+.design-archives a {
+  @include atoms.link;
+}
+
+.design-archives a:hover {
+  @include atoms.hover;
 }
 
 .design-archives {
@@ -172,6 +200,14 @@ header h2 {
     margin-bottom: 1em;
     list-style-type: none;
   }
+}
+
+#zen-resources h3 {
+  margin-left: 1em;
+}
+
+.zen-resources a:hover {
+  @include atoms.hover;
 }
 
 #zen-resources li{
@@ -183,8 +219,16 @@ header h2 {
   margin-left: 24rem;
 }
 
-@media screen and (max-width:768px) {
+footer a {
+  @include atoms.link;
+  margin: 2em;
+}
 
+footer a:hover {
+  @include atoms.hover;
+}
+
+@media screen and (max-width:768px) {
   .summary {
     padding: 0;
   }

@@ -1,9 +1,5 @@
 /* Font Import */
 @import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Lora&family=Montserrat:wght@300&family=Open+Sans:wght@600&display=swap");
-/*@mixin set-flex($direction: row, $wrap: wrap) {
-  display: flex;
-  flex-flow: $direction $wrap;
-}*/
 @keyframes animated_div {
   0% {
     transform: rotate(0deg);
@@ -170,6 +166,22 @@
     right: 0px;
   }
 }
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 85%;
+  color: #fff;
+  background-color: #237959;
+  margin: 0;
+}
+
 h2,
 h3,
 h4 {
@@ -222,8 +234,11 @@ a {
   transition: border-color 0.2s ease-in-out;
 }
 
-a:hover {
-  border-color: #41658a;
+footer {
+  height: 600px;
+  background-size: 100%;
+  margin-top: 2rem;
+  width: 150%;
 }
 
 @media screen and (max-width: 768px) {
@@ -326,6 +341,14 @@ header h2 {
   color: #fff;
 }
 
+.summary a {
+  color: rgb(255, 165, 0);
+}
+
+.summary a:hover {
+  color: rgb(160, 119, 44);
+}
+
 @media screen and (max-width: 768px) {
   .summary p {
     margin-left: 2em;
@@ -380,6 +403,14 @@ header h2 {
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
+.participation a {
+  color: rgb(255, 165, 0);
+}
+
+.participation a:hover {
+  color: rgb(160, 119, 44);
+}
+
 @media screen and (max-width: 768px) {
   .participation {
     margin-left: 2em;
@@ -408,6 +439,14 @@ header h2 {
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
+.requirements a {
+  color: rgb(255, 165, 0);
+}
+
+.requirements a:hover {
+  color: rgb(160, 119, 44);
+}
+
 @media screen and (max-width: 768px) {
   .requirements {
     margin-left: 2em;
@@ -428,12 +467,12 @@ header h2 {
   list-style-type: none;
 }
 
-.design-name:hover {
-  color: orange;
+.design-selection a {
+  color: rgb(255, 165, 0);
 }
 
-.designer-name:hover {
-  color: orange;
+.design-selection a:hover {
+  color: rgb(160, 119, 44);
 }
 
 #design-selection h3 {
@@ -444,8 +483,12 @@ header h2 {
   margin-left: 1em;
 }
 
-#zen-resources h3 {
-  margin-left: 1em;
+.design-archives a {
+  color: rgb(255, 165, 0);
+}
+
+.design-archives a:hover {
+  color: rgb(160, 119, 44);
 }
 
 .design-archives {
@@ -456,6 +499,14 @@ header h2 {
   list-style-type: none;
 }
 
+#zen-resources h3 {
+  margin-left: 1em;
+}
+
+.zen-resources a:hover {
+  color: rgb(160, 119, 44);
+}
+
 #zen-resources li {
   margin-bottom: 1em;
   list-style-type: none;
@@ -463,6 +514,15 @@ header h2 {
 
 .zen-validate-html {
   margin-left: 24rem;
+}
+
+footer a {
+  color: rgb(255, 165, 0);
+  margin: 2em;
+}
+
+footer a:hover {
+  color: rgb(160, 119, 44);
 }
 
 @media screen and (max-width: 768px) {
@@ -525,48 +585,4 @@ header h2 {
 
 #zen-resources {
   grid-area: resources;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: "Montserrat", arial, sans-serif;
-  font-size: 85%;
-  color: #fff;
-  background-color: #237959;
-  margin: 0;
-}
-
-footer {
-  height: 600px;
-  background-size: 100%;
-  margin-top: 2rem;
-  width: 150%;
-}
-
-footer a ::after {
-  width: 400px;
-  height: 190px;
-  background-image: url(./images/fish_school4.png);
-  position: relative;
-  padding: 10px;
-  margin-bottom: 10em;
-  animation: animated_div 5s 1;
-  -webkit-animation: animated_div 5s 1;
-  -o-animation: animated_div 5s 1;
-  -moz-animation: animated_div 5s 1;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
-}
-
-footer a {
-  margin-left: 2rem;
 }/*# sourceMappingURL=style.css.map */

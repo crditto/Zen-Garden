@@ -9,10 +9,13 @@
   line-height: $line-height;
 }
 
-/*@mixin set-flex($direction: row, $wrap: wrap) {
-  display: flex;
-  flex-flow: $direction $wrap;
-}*/
+@mixin hover {
+  color: $hover;
+}
+
+@mixin link {
+  color: $link;
+}
 
 @mixin uppercase($color: $text-dark) 
 {
@@ -199,6 +202,26 @@
 }
 
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $fonts-body;
+  font-size: 85%;
+  color: $text-light;
+  background-color: $primary;
+  margin: 0;
+}
+
 h2,
 h3,
 h4 
@@ -253,10 +276,13 @@ a
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
-a:hover 
-{
-  border-color: $accent1;
-}
+
+footer {
+  height: 600px;
+  background-size: 100%;
+  margin-top: 2rem;
+  width:150%;
+} 
 
 @media screen and (max-width:768px) {
 
