@@ -1,17 +1,637 @@
-/* Error: Undefined mixin.
- *    ,
- * 54 |     @include responsive_p;
- *    |     ^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   _molecules.scss 54:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 54 \2502      @include responsive_p;\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   _molecules.scss 54:5  root stylesheet";
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Lora&family=Montserrat:wght@300&family=Open+Sans:wght@600&display=swap");
+/*@mixin set-flex($direction: row, $wrap: wrap) {
+  display: flex;
+  flex-flow: $direction $wrap;
+}*/
+@keyframes animated_div {
+  0% {
+    transform: rotate(0deg);
+    left: 0%;
+  }
+  25% {
+    transform: rotate(0deg);
+    left: 0%;
+  }
+  50% {
+    transform: rotate(-360deg);
+    left: 0%;
+  }
+  65% {
+    transform: rotate(360deg);
+    left: 0%;
+  }
+  85% {
+    transform: rotate(0deg);
+    left: 0%;
+  }
+  75% {
+    transform: rotate(0deg);
+    left: 0%;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: 0%;
+  }
 }
+@keyframes animated_div {
+  0% {
+    -webkit-transform: rotate(0deg);
+    left: 0%;
+  }
+  25% {
+    -webkit-transform: rotate(0deg);
+    left: 0%;
+  }
+  50% {
+    -webkit-transform: rotate(-360deg);
+    left: 0%;
+  }
+  65% {
+    -webkit-transform: rotate(360deg);
+    left: 0%;
+  }
+  85% {
+    -webkit-transform: rotate(0deg);
+    left: 0%;
+  }
+  75% {
+    -webkit-ansform: rotate(0deg);
+    left: 0%;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    left: 0%;
+  }
+}
+@-moz-keyframes animated_div {
+  0% {
+    -moz-transform: rotate(0deg);
+    left: 0%;
+  }
+  25% {
+    -moz-transform: rotate(20deg);
+    left: 0%;
+  }
+  50% {
+    -moz-transform: rotate(0deg);
+    left: 8%;
+  }
+  55% {
+    -moz-transform: rotate(0deg);
+    left: 80%;
+  }
+  70% {
+    -moz-transform: scaleX(-1) rotate(0deg);
+    left: 8%;
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+    left: 0%;
+  }
+}
+@-o-keyframes animated_div {
+  0% {
+    transform: rotate(0deg);
+    left: 0%;
+  }
+  25% {
+    transform: rotate(20deg);
+    left: 0%;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 50%;
+  }
+  55% {
+    transform: rotate(0deg);
+    left: 50%;
+  }
+  70% {
+    transform: scaleX(-1) rotate(0deg);
+    left: 50%;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: 0%;
+  }
+}
+@media screen and (min-width: 732px) {
+  @keyframes animated_div {
+    0% {
+      transform: rotate(0deg);
+      left: 0%;
+    }
+    25% {
+      transform: rotate(20deg);
+      left: 0%;
+    }
+    50% {
+      transform: rotate(0deg);
+      left: 50%;
+    }
+    55% {
+      transform: rotate(0deg);
+      left: 50%;
+    }
+    70% {
+      transform: scaleX(-1) rotate(0deg);
+      left: 50%;
+    }
+    100% {
+      transform: rotate(-360deg);
+      left: 0%;
+    }
+  }
+  @keyframes animated_div {
+    0% {
+      -webkit-transform: rotate(0deg);
+      left: 0%;
+    }
+    25% {
+      -webkit-transform: rotate(20deg);
+      left: 0%;
+    }
+    50% {
+      -webkit-transform: rotate(0deg);
+      left: 50%;
+    }
+    55% {
+      -webkit-transform: rotate(0deg);
+      left: 50%;
+    }
+    70% {
+      -webkit-transform: scaleX(-1) rotate(0deg);
+      left: 50%;
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+      left: 0%;
+    }
+  }
+  @-moz-keyframes animated_div {
+    0% {
+      -moz-transform: rotate(0deg);
+      left: 0%;
+    }
+    25% {
+      -moz-transform: rotate(20deg);
+      left: 0%;
+    }
+    50% {
+      -moz-transform: rotate(0deg);
+      left: 50%;
+    }
+    55% {
+      -moz-transform: rotate(0deg);
+      left: 50%;
+    }
+    70% {
+      -moz-transform: scaleX(-1) rotate(0deg);
+      left: 50%;
+    }
+    100% {
+      -moz-transform: rotate(-360deg);
+      left: 0%;
+    }
+  }
+  @-o-keyframes animated_div {
+    0% {
+      transform: rotate(0deg);
+      left: 0%;
+    }
+    25% {
+      transform: rotate(20deg);
+      left: 0%;
+    }
+    50% {
+      transform: rotate(0deg);
+      left: 50%;
+    }
+    55% {
+      transform: rotate(0deg);
+      left: 50%;
+    }
+    70% {
+      transform: scaleX(-1) rotate(0deg);
+      left: 50%;
+    }
+    100% {
+      transform: rotate(-360deg);
+      left: 0%;
+    }
+  }
+}
+@keyframes animated_div2 {
+  0% {
+    transform: rotate(0deg);
+    right: 0px;
+  }
+  25% {
+    transform: rotate(20deg);
+    right: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    right: 500px;
+  }
+  55% {
+    transform: rotate(0deg);
+    right: 500px;
+  }
+  70% {
+    transform: scaleX(-1) rotate(0deg);
+    right: 500px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    right: 0px;
+  }
+}
+@keyframes animated_div2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    right: 0px;
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+    right: 0px;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    right: 500px;
+  }
+  55% {
+    -webkit-transform: rotate(0deg);
+    right: 500px;
+  }
+  70% {
+    -webkit-transform: scaleX(-1) rotate(0deg);
+    right: 500px;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    right: 0px;
+  }
+}
+@-moz-keyframes animated_div2 {
+  0% {
+    -moz-transform: rotate(0deg);
+    right: 0px;
+  }
+  25% {
+    -moz-transform: rotate(20deg);
+    right: 0px;
+  }
+  50% {
+    -moz-transform: rotate(0deg);
+    right: 500px;
+  }
+  55% {
+    -moz-transform: rotate(0deg);
+    right: 500px;
+  }
+  70% {
+    -moz-transform: rotate(0deg);
+    right: 500px;
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+    right: 0px;
+  }
+}
+@-o-keyframes animated_div2 {
+  0% {
+    transform: rotate(0deg);
+    right: 0px;
+  }
+  25% {
+    transform: rotate(20deg);
+    right: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    right: 500px;
+  }
+  55% {
+    transform: rotate(0deg);
+    right: 500px;
+  }
+  70% {
+    transform: rotate(0deg);
+    right: 500px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    right: 0px;
+  }
+}
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", Arial, Verdana, sans-serif;
+}
+
+h2 {
+  color: #fff;
+  font-weight: 900; /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+  margin-left: 5em;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.5em 0;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.design-name, .designer-name {
+  color: #fff;
+  padding: 5px;
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+a:hover {
+  border-color: #41658a;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #zen-preamble p {
+    padding-left: 100px;
+  }
+  #zen-preamble h3 {
+    padding-left: 75px;
+  }
+  h3 {
+    margin: 0;
+    margin-top: 50px;
+  }
+  footer {
+    width: 100% !important;
+  }
+  footer a {
+    margin: 1.5rem !important;
+  }
+  h2 {
+    font-size: 40pt;
+  }
+  .preamble {
+    margin: 0;
+    text-align: center;
+  }
+  .summary {
+    padding: 0;
+  }
+}
+body {
+  background: url(images/watertop.png) no-repeat;
+  background-size: 100%;
+}
+
+header {
+  height: 700px;
+  text-align: center;
+}
+
+@media screen and (max-width: 438px) {
+  header {
+    margin-bottom: 5rem;
+  }
+}
+h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 400px;
+  height: 190px;
+  background-image: url(./images/fish_school4.png);
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10em;
+  animation: animated_div 5s 1;
+  -webkit-animation: animated_div 5s 1;
+  -o-animation: animated_div 5s 1;
+  -moz-animation: animated_div 5s 1;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  color: #fff;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-weight: normal;
+  margin-top: 6em;
+}
+
+header h2 {
+  margin-top: -2.5em;
+}
+
+.summary {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5rem;
+  margin-top: -20rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.summary p:last-child {
+  border-top: 3px solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+.summary a {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .summary p {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+.preamble {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  margin-top: -8rem;
+  margin-bottom: 5rem;
+  margin-left: -20rem;
+  margin-right: 18rem;
+  padding: 5% 5% 5% 35%;
+  border-radius: 0px 20px 20px 0px;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+@media screen and (max-width: 768px) {
+  .preamble {
+    margin-top: -8rem;
+    margin-bottom: 5rem;
+    margin-left: -15rem;
+    margin-right: 2rem;
+  }
+}
+.explanation p:last-child {
+  border-bottom: 3px solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+@media screen and (max-width: 768px) {
+  .explanation {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .sidebar h3 .resources {
+    background-image: url(images/waterbottom_720.png) no-repeat !important;
+  }
+  footer {
+    background-image: none !important;
+  }
+}
+.participation p:last-child {
+  border-bottom: 3px solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+@media screen and (max-width: 768px) {
+  .participation {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+.benefits p:last-child {
+  border-bottom: 3px solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+@media screen and (max-width: 768px) {
+  .benefits {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+.requirements p:last-child {
+  border-bottom: 3px solid #41658a;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 2rem;
+  filter: drop-shadow(10px 10px 4px #45634e);
+}
+
+@media screen and (max-width: 768px) {
+  .requirements {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+.sidebar {
+  margin-top: -40rem;
+  margin-right: 1rem;
+  padding: 2rem;
+}
+
+.design-selection {
+  margin-bottom: 5rem;
+}
+.design-selection li {
+  margin-bottom: 1em;
+  list-style-type: none;
+}
+
+#design-selection h3 {
+  margin-left: 1em;
+}
+
+#design-archives h3 {
+  margin-left: 1em;
+}
+
+#zen-resources h3 {
+  margin-left: 1em;
+}
+
+.design-archives {
+  margin-bottom: 5rem;
+}
+.design-archives li {
+  margin-bottom: 1em;
+  list-style-type: none;
+}
+
+#zen-resources li {
+  margin-bottom: 1em;
+  list-style-type: none;
+}
+
+.zen-validate-html {
+  margin-left: 24rem;
+}
+
+.extra1 {
+  width: 400px;
+  height: 190px;
+  background-image: url(./images/fish_school4.png);
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10em;
+  animation: animated_div 5s 1;
+  -webkit-animation: animated_div 5s 1;
+  -o-animation: animated_div 5s 1;
+  -moz-animation: animated_div 5s 1;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .summary {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=_molecules.css.map */

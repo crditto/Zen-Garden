@@ -259,7 +259,9 @@ a:hover {
   }
 }
 body {
-  background: url(images/watertop.png) no-repeat;
+  background-image: url(images/watertop.png), url(images/waterbottom_720.png);
+  background-position: top, bottom;
+  background-repeat: no-repeat, no-repeat;
   background-size: 100%;
 }
 
@@ -535,10 +537,26 @@ body {
 
 footer {
   height: 600px;
-  background: url(images/waterbottom_720.png) no-repeat;
   background-size: 100%;
   margin-top: 2rem;
   width: 150%;
+}
+
+footer a ::after {
+  width: 400px;
+  height: 190px;
+  background-image: url(./images/fish_school4.png);
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10em;
+  animation: animated_div 5s 1;
+  -webkit-animation: animated_div 5s 1;
+  -o-animation: animated_div 5s 1;
+  -moz-animation: animated_div 5s 1;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
 }
 
 footer a {
