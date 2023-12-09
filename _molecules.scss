@@ -13,6 +13,7 @@ body {
 header {
   height: 700px;
   text-align: center;
+  animation: waterglow 4s linear infinite;
 }
 
 @media screen and (max-width:438px) { 
@@ -252,3 +253,16 @@ footer a:hover {
     padding: 0;
   }
 }
+
+@keyframes waterglow {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 35%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
