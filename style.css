@@ -338,14 +338,14 @@ a {
 
 footer {
   height: 250px;
-  background-size: 100%;
-  margin-top: 2rem;
+  margin-top: 8rem;
   width: 150%;
+  align-items: center;
 }
 
 footer a {
-  background: radial-gradient(circle at 100% 100%, #386b9f, rgba(0, 0, 0, 0.4117647059));
-  border-radius: 100%;
+  background: radial-gradient(circle at 100% 10%, #386b9f, rgba(0, 0, 0, 0.4901960784));
+  border-radius: 50%;
   color: white;
 }
 
@@ -409,7 +409,7 @@ body {
 }
 
 header h2 {
-  height: 700px;
+  height: 8em;
   text-align: center;
   animation: waterglow 4s linear infinite;
 }
@@ -456,8 +456,8 @@ header h2 {
   text-transform: uppercase;
   color: #fff;
   padding: 5rem;
-  margin-top: -20rem;
-  margin-bottom: 5rem;
+  margin-top: -40rem;
+  margin-bottom: 10rem;
   text-align: center;
 }
 .summary p:last-child {
@@ -486,8 +486,9 @@ header h2 {
   }
 }
 .preamble {
-  background: rgba(255, 255, 255, 0.9);
-  background-color: #386b9f;
+  background: radial-gradient(circle at 100% 10%, #386b9f, rgba(0, 0, 0, 0.4901960784));
+  border-radius: 50%;
+  color: white;
   color: #fff;
   margin-top: -8rem;
   margin-bottom: 5rem;
@@ -599,14 +600,6 @@ header h2 {
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
-}
-
-.requirements p:last-child {
-  border-bottom: 3px solid #386b9f;
-  margin-top: 1em;
-  padding-top: 1.5em;
-  padding-bottom: 2rem;
-  filter: drop-shadow(10px 10px 4px #45634e);
 }
 
 .requirements a {

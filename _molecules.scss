@@ -11,7 +11,7 @@ body {
 }
 
 header h2{
-  height: 700px;
+  height: 8em;
   text-align: center;
   animation: waterglow 4s linear infinite;
 }
@@ -41,8 +41,8 @@ header h2 {
 .summary {
   @include atoms.uppercase($text-light);
   padding: 5rem;
-  margin-top: -20rem;
-  margin-bottom: 5rem;
+  margin-top: -40rem;
+  margin-bottom: 10rem;
   text-align: center;
   p:last-child {
     @include atoms.divider;
@@ -67,8 +67,8 @@ header h2 {
 }
 
 .preamble {
-  background: rgba(255, 255, 255, 0.9);
-  background-color: $border;
+  background: radial-gradient(circle at 100% 10%, $border, #0000007d);  border-radius: 50%;
+  color: white;
   color: $text-light;
   margin-top: -8rem;
   margin-bottom: 5rem;
@@ -145,12 +145,6 @@ header h2 {
 
 .extra3 {
   @include atoms.animated_div2;
-}
-
-.requirements {
-  p:last-child {
-    @include atoms.divider2;
-  }
 }
 
 .requirements a {
