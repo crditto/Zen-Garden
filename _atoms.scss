@@ -375,11 +375,36 @@ a
 }
 
 footer {
-  height: 600px;
+  height: 250px;
   background-size: 100%;
   margin-top: 2rem;
   width:150%;
 } 
+
+footer a {
+  background: radial-gradient(circle at 100% 100%, $border, #00000069);  border-radius: 100%;
+  color: white;
+}
+
+.zen-validate-html {
+  padding: 25px 20px;
+}
+
+.zen-validate-css {
+  padding: 25px;
+}
+
+.zen-license {
+  padding: 25px;
+}
+
+.zen-accessibility {
+  padding: 25px 22px;
+}
+
+.zen-github {
+  padding: 25px;
+}
 
 @media screen and (max-width:768px) {
 
