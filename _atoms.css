@@ -1,9 +1,6 @@
 /* Font Import */
 @import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Lora&family=Montserrat:wght@300&family=Open+Sans:wght@600&display=swap");
-/*@mixin set-flex($direction: row, $wrap: wrap) {
-  display: flex;
-  flex-flow: $direction $wrap;
-}*/
+
 @keyframes animated_div {
   0% {
     transform: rotate(0deg);
