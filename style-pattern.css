@@ -340,7 +340,6 @@ footer {
   height: 250px;
   margin-top: 8rem;
   width: 150%;
-  align-items: center;
 }
 
 footer a {
@@ -636,6 +635,11 @@ header h2 {
   padding: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .sidebar {
+    margin-top: -12rem;
+  }
+}
 .design-selection {
   margin-bottom: 5rem;
 }
@@ -720,6 +724,15 @@ footer a:hover {
   color: rgb(160, 119, 44);
 }
 
+@media screen and (max-width: 620px) {
+  footer {
+    margin: 2rem 4rem 8rem 0rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+}
 @media screen and (max-width: 768px) {
   .summary {
     padding: 0;
@@ -742,11 +755,6 @@ footer a:hover {
     grid-template-columns: 2fr 2fr 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "intro intro intro intro" "preamble preamble preamble sidebar" "support support support sidebar" "explanation explanation explanation sidebar" "participation participation participation sidebar" "benefits benefits benefits benefits" "requirements requirements requirements requirements" "footer footer footer footer";
-  }
-}
-@media screen and (max-width: 768px) {
-  .page-wrapper {
-    grid-template-columns: 1fr;
   }
 }
 #zen-intro {

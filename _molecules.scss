@@ -162,7 +162,12 @@ header h2 {
   margin-top: -40rem;
   margin-right: 1rem;
   padding:2rem;
-  
+}
+
+@media screen and (max-width:768px) {
+  .sidebar {
+    margin-top: -12rem;
+  }
 }
 
 .design-selection {
@@ -245,6 +250,16 @@ footer a {
 
 footer a:hover {
   @include atoms.hover;
+}
+
+@media screen and (max-width:620px) {
+  footer {
+    margin: 2rem 4rem 8rem 0rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
 }
 
 @media screen and (max-width:768px) {
