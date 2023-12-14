@@ -442,13 +442,18 @@ h1 {
   justify-content: center;
   align-content: center;
   font-weight: normal;
-  margin-top: 6em;
+  margin-top: 3rem;
 }
 
 header h2 {
   margin-top: -2.5em;
 }
 
+@media screen and (max-width: 768px) {
+  header h2 {
+    margin-top: -3em;
+  }
+}
 .summary {
   font-weight: 300;
   letter-spacing: 2px;
@@ -478,6 +483,11 @@ header h2 {
   color: rgb(160, 119, 44);
 }
 
+@media screen and (max-width: 768px) {
+  .summary {
+    margin-top: -22rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .summary p {
     margin-left: 2em;
