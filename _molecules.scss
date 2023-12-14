@@ -16,14 +16,7 @@ header h2{
   animation: waterglow 4s linear infinite;
 }
 
-@media screen and (max-width:438px) { 
-  header {
-    margin-bottom: 5rem;
-  }
-}
-
 h1 {
-  // notice we have to reference the 'atoms' namespace to find our mixins.
   @include atoms.uppercase($text-light);
   @include atoms.animated_div;
   color: $anitext;
@@ -36,12 +29,6 @@ h1 {
 
 header h2 {
   margin-top: -2.5em;
-}
-
-@media screen and (max-width:768px) { 
-  header h2 {
-    margin-top: -3em;
-  }
 }
 
 .summary {
@@ -66,18 +53,6 @@ header h2 {
   @include atoms.hover;
 }
 
-@media screen and (max-width:768px) { 
-  .summary {
-    margin-top: -22rem;
-  }
-}
-
-@media screen and (max-width:768px) { 
-  .summary p {
-    @include atoms.responsive_p;
-  }
-}
-
 .preamble {
   background: radial-gradient(circle at 100% 10%, $border, #0000007d);  border-radius: 50%;
   color: white;
@@ -91,24 +66,9 @@ header h2 {
   filter: drop-shadow(10px 10px 4px #45634e);
 }
 
-@media screen and (max-width:768px) { 
-  .preamble {
-    margin-top: -8rem;
-    margin-bottom: 5rem;
-    margin-left: -15rem;
-    margin-right: 2rem;
-  }
-}
-
 .explanation {
   p:last-child {
     @include atoms.divider2;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .explanation {
-    @include atoms.responsive_p;
   }
 }
 
@@ -130,21 +90,9 @@ header h2 {
   @include atoms.hover
 }
 
-@media screen and (max-width:768px) {
-  .participation {
-    @include atoms.responsive_p;
-  }
-}
-
 .benefits {
   p:last-child {
     @include atoms.divider2;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .benefits {
-    @include atoms.responsive_p;
   }
 }
 
@@ -160,12 +108,6 @@ header h2 {
   @include atoms.hover;
 }
 
-@media screen and (max-width:768px) {
-  .requirements {
-    @include atoms.responsive_p;
-  }
-}
-
 .extra4 {
   @include atoms.animated_div2;
 }
@@ -174,12 +116,6 @@ header h2 {
   margin-top: -40rem;
   margin-right: 1rem;
   padding:2rem;
-}
-
-@media screen and (max-width:768px) {
-  .sidebar {
-    margin-top: -12rem;
-  }
 }
 
 .design-selection {
@@ -243,18 +179,6 @@ header h2 {
   margin-left: 10rem;
 }
 
-@media screen and (max-width:1024px) {
-  .zen-validate-html {
-    margin-left: 5rem;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .zen-validate-html {
-    margin-left: 2rem;
-  }
-}
-
 footer a {
   @include atoms.link;
   margin: 2em;
@@ -262,22 +186,6 @@ footer a {
 
 footer a:hover {
   @include atoms.hover;
-}
-
-@media screen and (max-width:620px) {
-  footer {
-    margin: 2rem 4rem 8rem 0rem;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: auto;
-    justify-items: center;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .summary {
-    padding: 0;
-  }
 }
 
 @keyframes waterglow {

@@ -109,48 +109,6 @@
   100% {transform: rotate(-360deg);left:0%;}
 }
 
-@media screen and (min-width:732px) { 
-
-  @keyframes animated_div
-  {
-    0% {transform: rotate(0deg);left:0%;}
-    25% {transform: rotate(20deg);left:0%;}
-    50% {transform: rotate(0deg);left:50%;}
-    55% {transform: rotate(0deg);left:50%;}
-    70% {transform: scaleX(-1) rotate(0deg);left:50%;}
-    100% {transform: rotate(-360deg);left:0%;}
-  }
-    
-  @keyframes animated_div
-  {
-    0% {-webkit-transform: rotate(0deg);left:0%;}
-    25% {-webkit-transform: rotate(20deg);left:0%;}
-    50% {-webkit-transform: rotate(0deg);left:50%;}
-    55% {-webkit-transform: rotate(0deg);left:50%;}
-    70% {-webkit-transform: scaleX(-1) rotate(0deg);left:50%}
-    100% {-webkit-transform: rotate(-360deg);left:0%;}
-  }
-    
-  @-moz-keyframes animated_div
-  {
-    0%  {-moz-transform: rotate(0deg);left:0%;}
-    25% {-moz-transform: rotate(20deg);left:0%;}
-    50%  {-moz-transform: rotate(0deg);left: 50%;}
-    55%  {-moz-transform: rotate(0deg);left:50%;}
-    70%  {-moz-transform: scaleX(-1) rotate(0deg);left:50%}
-    100% {-moz-transform: rotate(-360deg);left:0%;}
-  }
-    
-  @-o-keyframes animated_div
-  {
-    0% {transform: rotate(0deg);left:0%;}
-    25% {transform: rotate(20deg);left:0%;}
-    50%  {transform: rotate(0deg);left:50%;}
-    55%  {transform: rotate(0deg);left:50%;}
-    70%  {transform: scaleX(-1) rotate(0deg);left:50%}
-    100% {transform: rotate(-360deg);left:0%;}
-  }
-}
 
 @mixin animated_div2 
 {
@@ -223,82 +181,6 @@
   95% {transform: scaleX(-1) rotate(0deg);left:0%}
   100% {transform: scaleX(-1) rotate(0deg);left:0%}
 }
-
-@media screen and (min-width:732px) { 
-
-  @mixin animated_div2 
-{
-  width:100px;
-  height:60px;
-  background-image: url(./images/fish_school2.png);
-  position: relative;
-  margin-top: 4em;
-  margin-left: 48em;
-  padding:10px;
-  filter: drop-shadow(0px 30px 7px #2b4633);
-  animation:animated_div2 5s 1;
-  -moz-animation:animated_div2 5s 1;
-  -webkit-animation:animated_div2 5s 1;
-  -o-animation:animated_div2 5s 1;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
-}
-
-  @keyframes animated_div2
-  {
-    0% {transform: scaleX(-1) rotate(0deg);left:0%}
-    10% {transform: scaleX(-1) rotate(0deg);left:0%;}
-    25% {transform: scaleX(-1)rotate(0deg);left:0%;}
-    50% {transform: rotate(0deg);left:50%;}
-    55% {transform: rotate(0deg);left:50%;}
-    75% {transform: rotate(-360deg);left:0%;}
-    85% {transform: rotate(-360deg);left:0%;}
-    95% {transform: scaleX(-1) rotate(0deg);left:0%}
-    100% {transform: scaleX(-1) rotate(0deg);left:0%}
-  }
-    
-  @keyframes animated_div2
-  {
-    0% {-webkit-transform: scaleX(-1) rotate(0deg);left:0%}
-    10% {-webkit-transform: scaleX(-1) rotate(0deg);left:0%;}
-    25% {-webkit-transform: scaleX(-1)rotate(0deg);left:0%;}
-    50% {-webkit-transform: rotate(0deg);left:50%;}
-    55% {-webkit-transform: rotate(0deg);left:50%;}
-    75% {-webkit-transform: rotate(-360deg);left:0%;}
-    85% {-webkit-transform: rotate(-360deg);left:0%;}
-    95% {-webkit-transform: scaleX(-1) rotate(0deg);left:0%}
-    100% {-webkit-transform: scaleX(-1) rotate(0deg);left:0%}
-  }
-    
-  @-moz-keyframes animated_div2
-  {
-    0% {-moz-transform: scaleX(-1) rotate(0deg);left:0%}
-    10% {-moz-transform: scaleX(-1) rotate(0deg);left:0%;}
-    25% {-moz-transform: scaleX(-1)rotate(0deg);left:0%;}
-    50% {-moz-transform: rotate(0deg);left:50%;}
-    55% {-moz-transform: rotate(0deg);left:50%;}
-    75% {-moz-transform: rotate(-360deg);left:0%;}
-    85% {-moz-transform: rotate(-360deg);left:0%;}
-    95% {-moz-transform: scaleX(-1) rotate(0deg);left:0%}
-    100% {-moz-transform: scaleX(-1) rotate(0deg);left:0%}
-  }
-    
-  @-o-keyframes animated_div2
-  {
-    0% {transform: scaleX(-1) rotate(0deg);left:0%}
-    10% {transform: scaleX(-1) rotate(0deg);left:0%;}
-    25% {transform: scaleX(-1)rotate(0deg);left:0%;}
-    50% {transform: rotate(0deg);left:50%;}
-    55% {transform: rotate(0deg);left:50%;}
-    75% {transform: rotate(-360deg);left:0%;}
-    85% {transform: rotate(-360deg);left:0%;}
-    95% {transform: scaleX(-1) rotate(0deg);left:0%}
-    100% {transform: scaleX(-1) rotate(0deg);left:0%}
-  }
-}
-// these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
 
 html {
   -webkit-box-sizing: border-box;
@@ -404,42 +286,4 @@ footer a {
 
 .zen-github {
   padding: 25px;
-}
-
-@media screen and (max-width:768px) {
-
-  p {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  #zen-preamble p {
-    padding-left: 100px;
-  }
-  #zen-preamble h3 {
-    padding-left: 75px;
-  }
-
-  h3 {
-    margin: 0;
-    margin-top: 50px;
-  }
-
-  footer {
-    width: 100%!important;
-  }
-  footer a {
-    margin: 1.5rem!important;
-  }
-
-  h2 {
-    font-size: 40pt;
-  }
-  .preamble {
-    margin: 0;
-    text-align: center;
-  }
-
-  .summary {
-    padding: 0;
-  }
 }
