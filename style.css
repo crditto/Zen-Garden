@@ -520,12 +520,6 @@ header h2 {
     margin-left: 2em;
     margin-right: 2em;
   }
-  .sidebar h3 .resources {
-    background-image: url(images/waterbottom_720.png) no-repeat !important;
-  }
-  footer {
-    background-image: none !important;
-  }
 }
 .extra1 {
   width: 100px;
@@ -703,9 +697,19 @@ header h2 {
 }
 
 .zen-validate-html {
-  margin-left: 24rem;
+  margin-left: 10rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .zen-validate-html {
+    margin-left: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .zen-validate-html {
+    margin-left: 2rem;
+  }
+}
 footer a {
   color: rgb(255, 165, 0);
   text-decoration: none;
